@@ -1,0 +1,22 @@
+---
+permalink: manage/reference_datastore_inaccessible_when_volume_status_is_changed_to_offline.html
+sidebar: sidebar
+keywords: datastore inaccessible
+summary: ''
+---
+= Datastore inaccessible when volume status is changed to offline
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+== Issue
+
+When a volume of a datastore is made offline, the datastore is inaccessible. Even if you bring the volume online, VSC fails to discover the datastore. On the vSphere Client, if your right-click the datastore, no VSC actions are available.
+
+== Cause
+
+When volume is made offline from the cluster, the volume is unmounted first and then made offline or restricted. The junction path is removed when the volume is made offline and the datastore becomes inaccessible. If the volume is made online, the junction path is not available and not mounted on the by default. This is the ONTAP behavior.
+
+== Corrective action
+
+You should bring the volume online and then manually mount the volume with the same junction path as before. You can run the storage discovery to view that the datastore is discovered and actions for the datastore are available.

@@ -1,0 +1,16 @@
+---
+permalink: deploy/concept_deploy_or_upgrade_ontap_tools.html
+sidebar: sidebar
+keywords: deploying virtual appliance
+summary: 'You must download and deploy the virtual appliance for VSC, VASA Provider, and SRA in your VMware vSphere environment, and then configure the required applications based on the tasks you want to perform using VSC, VASA Provider, and SRAVSC, VASA Provider, and SRA.'
+---
+= Deploying or upgrading VSC, VASA Provider, and SRA
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must download and deploy the virtual appliance for VSC, VASA Provider, and SRA in your VMware vSphere environment, and then configure the required applications based on the tasks you want to perform using VSC, VASA Provider, and SRAVSC, VASA Provider, and SRA.
+
+*Related information*
+
+xref:task_enable_vasa_provider_for_configuring_virtual_datastores.adoc[Enabling VASA Provider for configuring virtual datastores]

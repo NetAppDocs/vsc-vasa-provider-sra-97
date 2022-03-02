@@ -1,0 +1,29 @@
+---
+permalink: manage/reference_authentication_failure_status_is_displayed_with_ipv6_as_the_cluster_ip_even_if_cluster_is_added_with_ipv4.html
+sidebar: sidebar
+keywords: Authentication failure for storage system,troubleshooting error
+summary: ''
+---
+= Adding storage system with IPv4 results in authentication error with IPv6 status in storage system grid
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+== Issue
+
+The storage system grid displays authentication failure status with IPv6 address for a storage system even though the storage system is added with IPv4 address.
+
+== Cause
+
+When you have a dual stack storage system with IPv4 and IPv6 LIFs and you add a storage system with IPv4 LIF, then during the periodic discovery process, VSC can discover the IPv6 LIF too. This IPv6 discovery fails with authentication error as the IPv6 LIF is not added explicitly. This error does not have any impact on any of the operations performed for the storage system.
+
+== Corrective action
+
+You must perform the following:
+
+. In the VSC home page, click *Storage Systems*.
+. Click the storage system that has unknown status with IPv6 address.
+. Change the IP address to IPv4 using the set default credentials.
+. Click *Back to listing*, and then click *REDISCOVER ALL*.
++
+The stale IPv6 entry from the storage systems list is deleted and storage system is discovered without authentication errors.
