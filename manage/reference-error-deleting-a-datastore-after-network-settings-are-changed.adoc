@@ -1,0 +1,38 @@
+---
+permalink: manage/reference-error-deleting-a-datastore-after-network-settings-are-changed.html
+sidebar: sidebar
+keywords: delete datastore,troubleshooting errors
+summary: ''
+---
+= Error deleting a datastore after network settings are changed
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+== Issue
+
+After changing the IP address of the virtual appliance for VSC, VASA Provider, and SRA, an error is displayed while using the VSC interface to perform certain operations. For example, deleting a datastore or trying to access VASA Provider server on ESXi host.
+
+== Cause
+
+The vCenter Server does not use the updated IP address and continues to use the old IP address to make calls to VASA Provider.
+
+== Corrective action
+
+When IP address of the virtual appliance for VSC, VASA Provider, and SRA changes, you should perform the following:
+
+. Unregister VSC from vCenter Server.
+. Access `https://<vcenter_ip>/mob`.
+. Click *Content* > *Extension Manager* > *Unregister Extension* > *Unregister all com.netapp.* extensions*.
+. Log in to the vCenter Server as root using putty.
+. Change to the vsphere-client-serenity directory using: `cd /etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity`.
+. Stop the vSphere Client: service using `vsphere-client stop`.
+. Remove the directories containing the UI extensions: `rm -rf com.netapp*`
+. Start the vSphere Client: service using `vsphere-client start`.
++
+This operation can take several minutes for the vSphere Client to restart and initialize correctly.
+
+. Change to the vsphere-ui serenity directory using: `/etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity/`.
+. Stop the vSphere UI: service using `vsphere-ui stop`.
+. Remove the directories containing the UI extensions: `rm -rf com.netapp*`
+. Start the vSphere UI using: `service-control --start vsphere-ui`.

@@ -1,0 +1,20 @@
+---
+permalink: deploy/concept-space-and-sizing-requirements-for-the-virtual-appliance-for-vsc-vasa-provider-and-sra.html
+sidebar: sidebar
+keywords: Virtual Storage Console,Storage Replication Adapter
+summary: 'Before deploying the virtual appliance for Virtual Storage Console \(VSC\), VASA Provider, and Storage Replication Adapter \(SRA\), you should be familiar with the space requirements for the deployment package and some basic host system requirements.'
+---
+= Space and sizing requirements for the virtual appliance for VSC, VASA Provider, and SRA
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before deploying the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA), you should be familiar with the space requirements for the deployment package and some basic host system requirements.
+
+* *Installation package space requirements*
+ ** 2.1 GB for thin provisioned installations
+ ** 54.0 GB for thick provisioned installations
+* *Host system sizing requirements*
+ ** ESXi 6.5U2 or later
+ ** Recommended memory: 12 GB RAM
+ ** Recommended CPUs: 2
