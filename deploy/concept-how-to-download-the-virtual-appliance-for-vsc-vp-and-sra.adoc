@@ -1,0 +1,18 @@
+---
+permalink: deploy/concept-how-to-download-the-virtual-appliance-for-vsc-vp-and-sra.html
+sidebar: sidebar
+keywords: 
+summary: 'You can download the .ova file for the virtual appliance for Virtual Storage Console, VASA Provider, and Storage Replication Adapter from the .'
+---
+= How to download the virtual appliance for VSC, VASA Provider, and SRA
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can download the `.ova` file for the virtual appliance for Virtual Storage Console, VASA Provider, and Storage Replication Adapter from the .
+
+The `.ova` file includes VSC, VASA Provider, and SRA. When the deployment is complete, all the three products are installed in your environment. By default, VSC starts working as soon as you decide on the subsequent deployment model and choose whether to enable VASA Provider and SRA based on your requirements.
+
+You can download the virtual appliance for VSC, VASA Provider, and SRA from the https://mysupport.netapp.com/site/products/all/details/vsc/downloads-tab by using the software download page.
+
+If you want to enable SRA in your deployment of the virtual appliance for VSC, VASA Provider, and SRA, then you must have installed the SRA plug-in on the Site Recovery Manager (SRM) server. You can download the installation file for the SRA plug-in from the *Storage Replication Adapter for ONTAP* menu in the Software Downloads section.
