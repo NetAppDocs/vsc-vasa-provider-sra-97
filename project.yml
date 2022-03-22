@@ -1,4 +1,13 @@
+---
 settings:
-  platform: catalyst
+  name: VMware vSphere 9.7
   internal:
-    pdf_enabled: false
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+sidebar:
+  entries:
+    - title: VMware vSphere 9.7 docs
+      url: /index.html
+    - section: deploy
+    - section: manage

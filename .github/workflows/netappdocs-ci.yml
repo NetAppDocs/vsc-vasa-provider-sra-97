@@ -4,14 +4,14 @@ on: [push, pull_request]
 
 env:
   DEPLOY_VERSION: v2
-  FRAMEWORK_BRANCH: main 
+  FRAMEWORK_BRANCH: main
   INTERNAL_FLAG: ${{ endsWith(github.event.repository.name, '-internal') }}
   ES_API: ${{ endsWith(github.event.repository.name, '-internal') &&  secrets.ES_API_INTERNAL || secrets.ES_API }}
   ES_AUTH: ${{ endsWith(github.event.repository.name, '-internal') &&  secrets.ES_AUTH_INTERNAL || secrets.ES_AUTH }}
   DEPLOY_KEY_PREVIEW: ${{ secrets.DEPLOY_KEY_PREVIEW }}
   DEPLOY_HOST_PREVIEW: ${{ secrets.DEPLOY_HOST_PREVIEW }}
-  GH_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+  GH_API_TOKEN: ${{ secrets.GH_API_TOKEN }}
+  GH_TOKEN: ${{ secrets.NETAPPDOCS_TOKEN }}
   MT_CLIENT: ${{ secrets.MT_CLIENT }}
   MT_SECRET: ${{ secrets.MT_SECRET }}
   MT_USER: ${{ secrets.MT_USER }}
@@ -24,8 +24,6 @@ jobs:
     steps:
       - name: "Repository Checkout"
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
 
       - name: "Framework Checkout"
         uses: actions/checkout@v2
@@ -57,8 +55,6 @@ jobs:
     steps:
       - name: "Repository Checkout"
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
 
       - name: "Jekyll Checkout"
         uses: actions/checkout@v2
