@@ -1,15 +1,15 @@
 ---
 permalink: deploy/concept-configure-vsc-for-vmware-vsphere-environment.html
 sidebar: sidebar
-keywords: 
-summary: '\(VSC\) supports numerous environments. Some of the features in these environments might require additional configuration.'
+keywords: configuring, your, virtual, storage, console, vmware, vsphere, environment,
+summary: "(VSC) supports numerous environments. Some of the features in these environments might require additional configuration."
 ---
 = Configuring your Virtual Storage Console for VMware vSphere environment
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-(VSC) supports numerous environments. Some of the features in these environments might require additional configuration.
+(VSC) supports numerou environments. Some of the features in these environments might require additional configuration.
 
 You might have to perform some of the following tasks to configure your ESXi hosts, guest operating systems, and VSC:
 

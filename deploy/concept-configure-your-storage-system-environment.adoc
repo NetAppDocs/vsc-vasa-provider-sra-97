@@ -1,8 +1,8 @@
 ---
 permalink: deploy/concept-configure-your-storage-system-environment.html
 sidebar: sidebar
-keywords: 
-summary: 'Virtual Storage Console for VMware vSphere provides a single mechanism to discover storage systems and to set the storage credentials. The credentials provide the ONTAP permissions that are required to enable Virtual Storage Console \(VSC\) users to perform tasks by using the storage systems.'
+keywords:
+summary: "Virtual Storage Console for VMware vSphere provides a single mechanism to discover storage systems and to set the storage credentials. The credentials provide the ONTAP permissions that are required to enable Virtual Storage Console (VSC) users to perform tasks by using the storage systems.""
 ---
 = Configuring your Virtual Storage Console for VMware vSphere storage system environment
 :icons: font
