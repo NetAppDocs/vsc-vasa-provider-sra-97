@@ -1,8 +1,8 @@
 ---
 permalink: deploy/concept-virtual-storage-console-overview.html
 sidebar: sidebar
-keywords: 
-summary: 'The virtual appliance for Virtual Storage Console \(VSC\), VASA Provider, and Storage Replication Adapter \(SRA\) provides end-to-end life cycle management for virtual machines in VMware environments that use NetApp storage systems. It simplifies storage and data management for VMware environments by enabling administrators to directly manage storage within the vCenter Server.'
+keywords: overview, virtual, appliance, vsc, vasa, provider, sra,
+summary: "The virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA) provides end-to-end life cycle management for virtual machines in VMware environments that use NetApp storage systems. It simplifies storage and data management for VMware environments by enabling administrators to directly manage storage within the vCenter Server."
 ---
 = Overview of the virtual appliance for VSC, VASA Provider, and SRA
 :icons: font
@@ -59,8 +59,8 @@ When SRA is enabled and used in conjunction with VMware Site Recovery Manager (S
 
 *Related information*
 
-https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62040[NetApp Documentation: OnCommand API Services]
+https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62040[NetApp Documentation: OnCommand API Services^]
 
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61278[NetApp Documentation: NetApp NFS Plug-in for VMware VAAI]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61278[NetApp Documentation: NetApp NFS Plug-in for VMware VAAI^]
 
-https://mysupport.netapp.com/site/[NetApp Support]
+https://mysupport.netapp.com/site/[NetApp Support^]

@@ -1,10 +1,10 @@
 ---
 permalink: deploy/concept-virtual-storage-console-and-vasa-provider-log-files.html
 sidebar: sidebar
-keywords: 
-summary: 'You can check the log files in the /opt/netapp/vscserver/log directory and the /opt/netapp/vpserver/log directory when you encounter errors.'
+keywords: virtual, storage, console, vasa, provider, log, files,
+summary: "You can check the log files in the /opt/netapp/vscserver/log directory and the /opt/netapp/vpserver/log directory when you encounter errors."
 ---
-= and VASA Provider log files
+= Virtual Storage Console and VASA Provider log files
 :icons: font
 :imagesdir: ../media/
 
