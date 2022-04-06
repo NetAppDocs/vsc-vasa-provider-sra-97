@@ -1,8 +1,8 @@
 ---
 permalink: deploy/concept-configuring-high-availability-for-virtual-appliance-for-vsc-vasa-provider-and-sra.html
 sidebar: sidebar
-keywords: 
-summary: 'The virtual appliance for Virtual Storage Console \(VSC\), VASA Provider, and Storage Replication Adapter \(SRA\) supports a \(HA\) configuration to help provide uninterrupted functionality of VSC, VASA Provider, and SRA during failure.'
+keywords: configuring, high, availability, virtual, appliance, vsc, vasa, provider, sra,
+summary: "The virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA) supports a (HA) configuration to help provide uninterrupted functionality of VSC, VASA Provider, and SRA during failure."
 ---
 = Configuring high availability for the virtual appliance for VSC, VASA Provider, and SRA
 :icons: font
