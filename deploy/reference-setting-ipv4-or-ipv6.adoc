@@ -1,8 +1,8 @@
 ---
 permalink: deploy/reference-setting-ipv4-or-ipv6.html
 sidebar: sidebar
-keywords: 
-summary: 'There is a new option added to the preference file kaminoprefs.xmlthat you can set to enable support for IPv4 or IPv6 for all storage systems added to VSC.'
+keywords: setting, ipv4, ipv6,
+summary: "There is a new option added to the preference file kaminoprefs.xml that you can set to enable support for IPv4 or IPv6 for all storage systems added to VSC."
 ---
 = Setting IPv4 or IPv6
 :icons: font
@@ -18,6 +18,7 @@ This preference is applicable for all of the storage systems added to VSC.
 * The values for the new option are `IPv4`, `IPv6`, and `NONE`.
 * By default the value is set to `NONE`.
 
+[cols="1a,1a" options="header"]
 |===
 | Value| Description
 a|

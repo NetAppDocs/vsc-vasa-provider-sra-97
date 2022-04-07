@@ -1,8 +1,8 @@
 ---
 permalink: deploy/reference-port-requirements-for-vsc.html
 sidebar: sidebar
-keywords: port requirements
-summary: 'By default, \(VSC\) uses designated ports to enable communication between its components, which include storage systems and the VMware vCenter Server. If you have firewalls enabled, you must ensure that the firewalls are set to allow exceptions.'
+keywords: port, requirements, vsc
+summary: "By default, (VSC) uses designated ports to enable communication between its components, which include storage systems and the VMware vCenter Server. If you have firewalls enabled, you must ensure that the firewalls are set to allow exceptions."
 ---
 = Port requirements for VSC
 :icons: font
@@ -17,6 +17,7 @@ _Unable to communicate with the server_
 
 VSC uses the following default bidirectional TCP ports:
 
+[cols="1a,1a" options="header"]
 |===
 | Default port number| Description
 a|
@@ -40,6 +41,8 @@ VSC sends an echo request to ONTAP to verify reachability and is required only w
 
 [NOTE]
 ====
-You should have enabled Internet Control Message Protocol (ICMP) before deploying the virtual appliance for VSC, VASA Provider, and SRA.If ICMP is disabled, then the initial configuration of the virtual appliance for VSC, VASA Provider, and SRA fails, and VSC cannot start the VSC and VASA Provider services after deployment. You must manually enable the VSC and VASA Provider services after deployment.
+You should have enabled Internet Control Message Protocol (ICMP) before deploying the virtual appliance for VSC, VASA Provider, and SRA.
+
+If ICMP is disabled, then the initial configuration of the virtual appliance for VSC, VASA Provider, and SRA fails, and VSC cannot start the VSC and VASA Provider services after deployment. You must manually enable the VSC and VASA Provider services after deployment.
 
 ====

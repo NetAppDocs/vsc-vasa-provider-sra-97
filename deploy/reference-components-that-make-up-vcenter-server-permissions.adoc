@@ -1,8 +1,8 @@
 ---
 permalink: deploy/reference-components-that-make-up-vcenter-server-permissions.html
 sidebar: sidebar
-keywords:
-summary: 'The vCenter Server recognizes permissions, not privileges. Each vCenter Server permission consists of three components.'
+keywords: components, vcenter, server, permissions,
+summary: "The vCenter Server recognizes permissions, not privileges. Each vCenter Server permission consists of three components."
 ---
 = Components of vCenter Server permissions
 :experimental:
@@ -32,6 +32,8 @@ As the following diagram illustrates, you must have all three elements in order 
 ====
 In this diagram, the gray boxes indicate components that exist in the vCenter Server, and the white boxes indicate components that exist in the operating system where the vCenter Server is running.
 ====
+
+image::../media/permission-updated-graphic.png[]
 
 == Privileges
 

@@ -1,8 +1,8 @@
 ---
 permalink: deploy/reference-unable-to-install-sra-plug-in-due-to-winhttp-proxy-settings.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: unable, to, install, the, sra, plug-in,
+summary: "Unable to install the SRA plug-in"
 ---
 = Unable to install the SRA plug-in
 :icons: font
@@ -24,4 +24,4 @@ The error might occur due to one of the following reasons:
 * Verify your administrator credentials.
 * The knowledgebase article has more information about resolving issues with WinHTTP proxy settings.
 +
-https://kb.netapp.com/app/answers/answer_view/a_id/1005074[NetApp Knowledgebase Answer 1005074: Installing of SRA 4.0P1 client plugin (netapp_sra_4.0P1_ontap_64bit.msi) hangs at the server IP and password screen]
+https://kb.netapp.com/app/answers/answer_view/a_id/1005074[NetApp Knowledgebase Answer 1005074: Installing of SRA 4.0P1 client plugin (netapp_sra_4.0P1_ontap_64bit.msi) hangs at the server IP and password screen^]

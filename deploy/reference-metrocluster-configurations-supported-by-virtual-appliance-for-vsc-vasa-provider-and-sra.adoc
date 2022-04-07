@@ -1,8 +1,8 @@
 ---
 permalink: deploy/reference-metrocluster-configurations-supported-by-virtual-appliance-for-vsc-vasa-provider-and-sra.html
 sidebar: sidebar
-keywords: 
-summary: 'The virtual appliance for Virtual Storage Console \(VSC\), VASA Provider, and Storage Replication Adapter \(SRA\) supports environments that use MetroCluster IP and FC configurations for ONTAP. Most of this support is automatic. However, you might notice a few differences when you use a MetroCluster environment with VSC and VASA Provider.'
+keywords: metroCluster, configurations, supported, virtual, appliance, vsc, vasa, provider, sra,
+summary: "The virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA) supports environments that use MetroCluster IP and FC configurations for ONTAP. Most of this support is automatic. However, you might notice a few differences when you use a MetroCluster environment with VSC and VASA Provider."
 ---
 = MetroCluster configurations supported by the virtual appliance for VSC, VASA Provider, and SRA
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: deploy/reference-srm-does-not-work-after-sra-installation.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: netapp, storage, replication, adapter, ontap, appear, site, recovery, manager, appliance,
+summary: "NetApp Storage Replication Adapter for ONTAP does not appear on the Site Recovery Manager Appliance"
 ---
 = NetApp Storage Replication Adapter for ONTAP does not appear on the Site Recovery Manager Appliance
 :icons: font

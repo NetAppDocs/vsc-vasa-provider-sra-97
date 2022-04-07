@@ -1,8 +1,8 @@
 ---
 permalink: deploy/reference-esx-host-values-set-by-vsc-for-vmware-vsphere.html
 sidebar: sidebar
-keywords: 
-summary: 'You can set timeouts and other values on the ESXi hosts using Virtual Storage Console for VMware vSphere to ensure best performance and successful failover. The values that Virtual Storage Console \(VSC\) sets are based on internal testing.'
+keywords: esxi, host, values, set, using, virtual, storage, console, vmware, vsphere,
+summary: "You can set timeouts and other values on the ESXi hosts using Virtual Storage Console for VMware vSphere to ensure best performance and successful failover. The values that Virtual Storage Console (VSC) sets are based on internal testing."
 ---
 = ESXi host values set using Virtual Storage Console for VMware vSphere
 :icons: font
