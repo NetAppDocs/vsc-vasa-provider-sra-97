@@ -1,8 +1,8 @@
 ---
 permalink: deploy/reference-configuring-storage-replication-adapter-for-highly-scaled-environment.html
 sidebar: sidebar
-keywords: 
-summary: 'You must configure the storage timeout intervals per the recommended settings for Storage Replication Adapter \(SRA\) to perform optimally in highly scaled environments.'
+keywords: configuration, storage, replication, adapter, highly, scaled, environment,
+summary: "You must configure the storage timeout intervals per the recommended settings for Storage Replication Adapter (SRA) to perform optimally in highly scaled environments."
 ---
 = Configuration of Storage Replication Adapter for highly scaled environment
 :icons: font
@@ -18,7 +18,7 @@ You must configure the storage timeout intervals per the recommended settings fo
 
 See VMware documentation for more information on modifying Storage Provider settings.
 
-https://docs.vmware.com/en/Site-Recovery-Manager/6.5/com.vmware.srm.admin.doc/GUID-E4060824-E3C2-4869-BC39-76E88E2FF9A0.html[VMware vSphere Documentation: Change Storage Provider Settings]
+https://docs.vmware.com/en/Site-Recovery-Manager/6.5/com.vmware.srm.admin.doc/GUID-E4060824-E3C2-4869-BC39-76E88E2FF9A0.html[VMware vSphere Documentation: Change Storage Provider Settings^]
 
 == Storage settings
 
@@ -29,8 +29,8 @@ You must set the value of the `storage.commandTimeout` timeout interval for high
 The timeout interval specified is the maximum value. You do not need to wait for the maximum timeout to be reached. Most commands finish within the set maximum timeout interval.
 ====
 
-https://kb.netapp.com/app/answers/answer_view/a_id/1001111[NetApp Knowledgebase Answer 1001111: NetApp Storage Replication Adapter 4.0/7.X for ONTAP Sizing Guide]
+https://kb.netapp.com/app/answers/answer_view/a_id/1001111[NetApp Knowledgebase Answer 1001111: NetApp Storage Replication Adapter 4.0/7.X for ONTAP Sizing Guide^]
 
 VMware documentation on modifying SAN Provider settings has more information.
 
-https://docs.vmware.com/en/Site-Recovery-Manager/6.5/com.vmware.srm.admin.doc/GUID-711FD223-50DB-414C-A2A7-3BEB8FAFDBD9.html[Vmware Site Recovery Manager Documentation: Change Storage Settings]
+https://docs.vmware.com/en/Site-Recovery-Manager/6.5/com.vmware.srm.admin.doc/GUID-711FD223-50DB-414C-A2A7-3BEB8FAFDBD9.html[Vmware Site Recovery Manager Documentation: Change Storage Settings^]

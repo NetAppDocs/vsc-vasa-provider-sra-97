@@ -1,10 +1,11 @@
 ---
 permalink: deploy/reference-components-that-make-up-vcenter-server-permissions.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The vCenter Server recognizes permissions, not privileges. Each vCenter Server permission consists of three components.'
 ---
 = Components of vCenter Server permissions
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
@@ -53,10 +54,11 @@ To simplify working with vCenter Server RBAC, VSC provides several standard role
 
 If you change the privileges within a permission, the user that is associated with that permission should log out, and then log in to enable the updated permission.
 
+[cols="1a,1a,1a" options="header"]
 |===
 | Privilege| Roles| Tasks
 a|
-*NetApp Virtual Storage Console* > *View*
+menu:NetApp Virtual Storage Console[View]
 a|
 
 * VSC Administrator
@@ -66,7 +68,7 @@ a|
 a|
 All the VSC and VASA Provider specific tasks require the View Privilege.
 a|
-*NetApp Virtual Storage Console* > *Policy Based Management* > *Management* or *privilege.nvpfVSC.VASAGroup.com.netapp.nvpf.label* > *Management*
+menu:NetApp Virtual Storage Console[Policy Based Management > Management] or menu:privilege.nvpfVSC.VASAGroup.com.netapp.nvpf.label[Management]
 a|
 VSC Administrator
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: deploy/reference-configure-the-vsc-preferences-files.html
 sidebar: sidebar
-keywords: preferences files
-summary: 'The preferences files contain settings that control Virtual Storage Console for VMware vSphere operations. Under most circumstances, you do not have to modify the settings in these files. It is helpful to know which preference files \(VSC\) uses.'
+keywords: preferences, files, configuring, vsc, preferences, files,
+summary: "The preferences files contain settings that control Virtual Storage Console for VMware vSphere operations. Under most circumstances, you do not have to modify the settings in these files. It is helpful to know which preference files (VSC) uses."
 ---
 = Configuring the VSC preferences files
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: deploy/reference-deploment-customization-requirements.html
 sidebar: sidebar
-keywords: 
-summary: 'You must consider few limitations while customizing the deployment of virtual appliance for VSC, VASA Provider, and SRA.'
+keywords: deployment, customization, considerations,
+summary: "You must consider few limitations while customizing the deployment of virtual appliance for VSC, VASA Provider, and SRA."
 ---
 = Deployment customization considerations
 :icons: font
@@ -17,7 +17,7 @@ You must not use any spaces in the administrator password.
 
 == Appliance maintenance console credentials
 
-You must access the maintenance console by using the "`maint`" user name. You can set the password for the "`maint`" user during deployment. You can use the Application Configuration menu of the maintenance console of your virtual appliance for VSC, VASA Provider, and SRA to change the password.
+You must access the maintenance console by using the "`maint`" user name. You can set the password for the "`maint`" user during deployment. You can use the *Application Configuration* menu of the maintenance console of your virtual appliance for VSC, VASA Provider, and SRA to change the password.
 
 == vCenter Server administrator credentials
 
@@ -35,9 +35,8 @@ The type of VSC and VASA certificates generated depends on the IP address (IPv4 
 +
 Both the VSC and VASA certificates will be generated using the same type of IP address used during vCenter Server registration.
 
-[NOTE]::
-
-====::
+[NOTE]
+====
 IPv6 is supported only with vCenter Server 6.7 and later.
 ====
 

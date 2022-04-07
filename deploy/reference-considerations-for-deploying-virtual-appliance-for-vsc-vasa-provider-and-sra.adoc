@@ -1,8 +1,8 @@
 ---
 permalink: deploy/reference-considerations-for-deploying-virtual-appliance-for-vsc-vasa-provider-and-sra.html
 sidebar: sidebar
-keywords: Virtual Storage Console,Storage Replication Adapter
-summary: 'Before you deploy the virtual appliance for Virtual Storage Console \(VSC\), VASA Provider, and Storage Replication Adapter \(SRA\), it is good practice to plan your deployment and decide how you want to configure VSC, VASA Provider, and SRA in your environment.'
+keywords: considerations, requirements, deploying, virtual, appliance, vsc, vasa, provider, sra,
+summary: "Before you deploy the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA), it is good practice to plan your deployment and decide how you want to configure VSC, VASA Provider, and SRA in your environment."
 ---
 = Considerations and requirements for deploying the virtual appliance for VSC, VASA Provider, and SRA
 :icons: font
@@ -13,19 +13,20 @@ Before you deploy the virtual appliance for Virtual Storage Console (VSC), VASA 
 
 The following table presents an overview of what you should consider before you deploy the virtual appliance for VSC, VASA Provider, and SRA.
 
+[cols="1a,1a" options="header"]
 |===
 | Considerations| Description
 a|
 First-time deployment of the virtual appliance for VSC, VASA Provider, and SRA
 a|
-The deployment of the virtual appliance for VSC, VASA Provider, and SRA automatically installs the VSC features.link:concept-deploy-or-upgrade-ontap-tools.md#[Deploying or upgrading VSC, VASA Provider, and SRA]
+The deployment of the virtual appliance for VSC, VASA Provider, and SRA automatically installs the VSC features.link:concept-deploy-or-upgrade-ontap-tools.md#[Deploying or upgrading VSC, VASA Provider, and SRA^]
 
-link:concept-installation-workflow-for-new-users.md#[Deployment workflow for new users of VSC, VASA Provider, and SRA virtual appliance]
+link:concept-installation-workflow-for-new-users.md#[Deployment workflow for new users of VSC, VASA Provider, and SRA virtual appliance^]
 
 a|
 Upgrading from an existing deployment of VSC
 a|
-The upgrade procedure from an existing deployment of VSC to the virtual appliance for VSC, VASA Provider, and SRA depends on the version of VSC, and whether you have deployed VSC, VASA Provider, and SRA. The deployment workflows and upgrade section has more information.link:concept-installation-workflow-for-existing-users-of-vsc.md#[Deployment workflow for existing users of VSC, VASA Provider, and SRA]
+The upgrade procedure from an existing deployment of VSC to the virtual appliance for VSC, VASA Provider, and SRA depends on the version of VSC, and whether you have deployed VSC, VASA Provider, and SRA. The deployment workflows and upgrade section has more information.link:concept-installation-workflow-for-existing-users-of-vsc.md#[Deployment workflow for existing users of VSC, VASA Provider, and SRA^]
 
 Best practices before an upgrade:
 
@@ -40,23 +41,25 @@ VSC overwrites the standard roles with the current defaults each time you restar
 a|
 Regenerating an SSL certificate for VSC
 a|
-The SSL certificate is automatically generated when you deploy the virtual appliance for VSC, VASA Provider, and SRA. You might have to regenerate the SSL certificate to create a site-specific certificate.link:task-regenerating-an-ssl-certificate-for-vsc.md#[Regenerating an SSL certificate for]
+The SSL certificate is automatically generated when you deploy the virtual appliance for VSC, VASA Provider, and SRA. You might have to regenerate the SSL certificate to create a site-specific certificate.link:task-regenerating-an-ssl-certificate-for-vsc.md#[Regenerating an SSL certificate for^]
 
 a|
 Setting ESXi server values
 a|
 Although most of your ESXi server values are set by default, it is a good practice to check the values. These values are based on internal testing. Depending on your environment, you might have to change some of the values to improve performance.
 
-* link:task-configuring-esx-server-multipathing-and-timeout-settings.md#[Configuring ESXi server multipathing and timeout settings]
-* link:reference-esx-host-values-set-by-vsc-for-vmware-vsphere.md#[ESXi host values set using Virtual Storage Console for VMware vSphere]
+* link:task-configuring-esx-server-multipathing-and-timeout-settings.md#[Configuring ESXi server multipathing and timeout settings^]
+* link:reference-esx-host-values-set-by-vsc-for-vmware-vsphere.md#[ESXi host values set using Virtual Storage Console for VMware vSphere^]
 
 a|
 Guest operating system timeout values
 a|
 The guest operating system (guest OS) timeout scripts set the SCSI I/O timeout values for supported Linux, Solaris, and Windows guest operating systems to provide correct failover behavior.
 |===
+
 The following table presents an overview of what you require to configure the virtual appliance for VSC, VASA Provider, and SRA.
 
+[cols="1a,1a" options="header"]
 |===
 | Considerations| Description
 a|
@@ -70,8 +73,8 @@ You can create the recommended ONTAP roles by using ONTAP System Manager using t
 
 If a user attempts to perform a task without the correct privileges and permissions, the task options are grayed out.
 
-* link:concept-standard-roles-packaged-with-virtual-appliance-for-vsc-vp-and-sra.md#[Standard roles packaged with the virtual appliance for VSC, VASA Provider, and SRA]
-* link:concept-recommended-ontap-roles-when-using-vsc-for-vmware-vsphere.md#[Recommended ONTAP roles when using VSC for VMware vSphere]
+* link:concept-standard-roles-packaged-with-virtual-appliance-for-vsc-vp-and-sra.md#[Standard roles packaged with the virtual appliance for VSC, VASA Provider, and SRA^]
+* link:concept-recommended-ontap-roles-when-using-vsc-for-vmware-vsphere.md#[Recommended ONTAP roles when using VSC for VMware vSphere^]
 
 a|
 ONTAP version
@@ -80,6 +83,8 @@ Your storage systems must be running ONTAP 9.1, 9.3, 9.5, 9.6, or 9.7.
 a|
 Storage capability profiles
 a|
-To use storage capability profiles or to set up alarms, you must enable VASA Provider for ONTAP. After you enable VASA Provider, you can configure VMware Virtual Volumes (vVols) datastores, and you can create and manage storage capability profiles and alarms. The alarms warn you when a volume or an aggregate is at nearly full capacity or when a datastore is no longer in compliance with the associated storage capability profile.
+To use storage capability profiles or to set up alarms, you must enable VASA Provider for ONTAP. After you enable VASA Provider, you can configure VMware Virtual Volumes (vVols) datastores, and you can create and manage storage capability profiles and alarms.
+
+The alarms warn you when a volume or an aggregate is at nearly full capacity or when a datastore is no longer in compliance with the associated storage capability profile.
 
 |===

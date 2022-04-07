@@ -1,8 +1,8 @@
 ---
 permalink: deploy/concept-vmware-high-availability-for-vcenter-server.html
 sidebar: sidebar
-keywords: VSC
-summary: 'You can configure your vSphere environment where the virtual appliance for Virtual Storage Console \(VSC\), VASA Provider, and Storage Replication Adapter \(SRA\) is deployed for \(HA\). The VMware HA feature provides failover protection from hardware failures and operating system failures in virtual environments.'
+keywords: vsc, vmware, vsphere, ha,
+summary: "You can configure your vSphere environment where the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA) is deployed for (HA). The VMware HA feature provides failover protection from hardware failures and operating system failures in virtual environments."
 ---
 = VMware vSphere HA
 :icons: font
@@ -15,4 +15,4 @@ The VMware HA feature monitors virtual machines to detect operating system failu
 
 The procedure to configure VMware HA depend on the version of your vCenter Server. For example, you can use the following reference link and select the required vCenter Server version to view the steps to configure VMware HA.
 
-https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-5432CA24-14F1-44E3-87FB-61D937831CF6.html[VMware vSphere Documentation: Creating and Using vSphere HA Clusters]
+https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-5432CA24-14F1-44E3-87FB-61D937831CF6.html[VMware vSphere Documentation: Creating and Using vSphere HA Clusters^]
