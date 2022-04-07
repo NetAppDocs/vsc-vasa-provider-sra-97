@@ -1,8 +1,8 @@
 ---
 permalink: deploy/task-installing-the-nfs-vaai-plug-in.html
 sidebar: sidebar
-keywords: 
-summary: 'You can install the NFS Plug-in for VMware vStorage APIs for Array Integration \(VAAI\) using the GUI of the virtual appliance for Virtual Storage Console \(VSC\), VASA Provider, and Storage Replication Adapter \(SRA\).'
+keywords: installing, the, nfs, vaai, plug-in,
+summary: "You can install the NFS Plug-in for VMware vStorage APIs for Array Integration (VAAI) using the GUI of the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA)."
 ---
 = Installing the NFS VAAI plug-in
 :icons: font
@@ -11,21 +11,21 @@ summary: 'You can install the NFS Plug-in for VMware vStorage APIs for Array Int
 [.lead]
 You can install the NFS Plug-in for VMware vStorage APIs for Array Integration (VAAI) using the GUI of the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA).
 
-== Before you begin
+.Before you begin
 
 * You must have downloaded the installation package for the NFS Plug-in for VAAI (`.vib`) from .
 +
-https://mysupport.netapp.com/site/[NetApp Support]
+https://mysupport.netapp.com/site/[NetApp Support^]
 
 * You must have installed ESXi host 6.5 or later and ONTAP 9.1 or later.
 * You must have powered on the ESXi host and mounted an NFS datastore.
 * You must have set the values of the `DataMover.HardwareAcceleratedMove`, `DataMover.HardwareAcceleratedInit`, and `VMFS3.HardwareAcceleratedLocking` host settings to "`1`".
 +
-These values are set automatically on the ESXi host when the Recommended Settings dialog box is updated.
+These values are set automatically on the ESXi host when the *Recommended Settings* dialog box is updated.
 
 * You must have enabled the vstorage option on the by using the `vserver nfs modify -vserver vserver_name -vstorage enabled` command.
 
-== Steps
+.Steps
 
 . Rename the `.vib` file that you downloaded from to `NetAppNasPlugin.vib` to match the predefined name that VSC uses.
 . Click *Settings* in the VSC home page.

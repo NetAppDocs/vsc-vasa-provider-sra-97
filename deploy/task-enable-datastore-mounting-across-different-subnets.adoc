@@ -1,8 +1,8 @@
 ---
 permalink: deploy/task-enable-datastore-mounting-across-different-subnets.html
 sidebar: sidebar
-keywords: 
-summary: 'If you use iSCSI or NFS and the subnet is different between your ESXi hosts and your storage system, you have to modify the Virtual Storage Console for VMware vSphere preferences files. If you do not modify the preferences file, then datastore provisioning fails because \(VSC\) cannot mount the datastore.'
+keywords: enabling, datastore, mounting, across, different, subnets,
+summary: "If you use iSCSI or NFS and the subnet is different between your ESXi hosts and your storage system, you have to modify the Virtual Storage Console for VMware vSphere preferences files. If you do not modify the preferences file, then datastore provisioning fails because (VSC) cannot mount the datastore."
 ---
 = Enabling datastore mounting across different subnets
 :icons: font
@@ -11,7 +11,7 @@ summary: 'If you use iSCSI or NFS and the subnet is different between your ESXi 
 [.lead]
 If you use iSCSI or NFS and the subnet is different between your ESXi hosts and your storage system, you have to modify the Virtual Storage Console for VMware vSphere preferences files. If you do not modify the preferences file, then datastore provisioning fails because (VSC) cannot mount the datastore.
 
-== About this task
+.About this task
 
 When datastore provisioning fails, VSC logs the following error messages:
 
@@ -19,7 +19,7 @@ When datastore provisioning fails, VSC logs the following error messages:
 
 `Unable to find a matching network to NFS mount volume to these hosts.` ``
 
-== Steps
+.Steps
 
 . Log in to your vCenter Server instance.
 . Launch the maintenance console using your unified appliance virtual machine.
@@ -31,6 +31,8 @@ link:task-accessing-virtual-appliance-maiintenance-console-options.md#[Accessing
 . Enter `vi /opt/netapp/vscserver/etc/kamino/kaminoprefs.xml` to update the `kaminoprefs.xml` file.
 . Update the `kaminoprefs.xml` file.
 +
+
+[cols="1a,1a" options="header"]
 |===
 | If you use...| Do this...
 a|
