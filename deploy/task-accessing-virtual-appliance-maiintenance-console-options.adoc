@@ -1,8 +1,8 @@
 ---
 permalink: deploy/task-accessing-virtual-appliance-maiintenance-console-options.html
 sidebar: sidebar
-keywords: 
-summary: 'You can manage your application, system, and network configurations by using the maintenance console of the virtual appliance for Virtual Storage Console \(VSC\), VASA Provider, and Storage Replication Adapter \(SRA\). You can change your administrator password and maintenance password. You can also generate support bundles, set different log levels, view and manage TLS configurations, and start remote diagnostics.'
+keywords: accessing, maintenance, console, options, virtual, appliance, vsc, vasa, provider, sra,
+summary: "You can manage your application, system, and network configurations by using the maintenance console of the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA). You can change your administrator password and maintenance password. You can also generate support bundles, set different log levels, view and manage TLS configurations, and start remote diagnostics."
 ---
 = Accessing the maintenance console options of the virtual appliance for VSC, VASA Provider, and SRA
 :icons: font
@@ -11,16 +11,16 @@ summary: 'You can manage your application, system, and network configurations by
 [.lead]
 You can manage your application, system, and network configurations by using the maintenance console of the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA). You can change your administrator password and maintenance password. You can also generate support bundles, set different log levels, view and manage TLS configurations, and start remote diagnostics.
 
-== Before you begin
+.Before you begin
 
 You must have installed VMware tools after deploying the virtual appliance for VSC, VASA Provider, and SRA.
 
-== About this task
+.About this task
 
 * You must use "`maint`" as the user name and the password you configured during deployment to log in to the maintenance console of the virtual appliance for VSC, VASA Provider, and SRA.
 * You must set a password for the "`diag`" user while enabling remote diagnostics.
 
-== Steps
+.Steps
 
 . Access the *Summary* tab of your deployed virtual appliance.
 . Click image:../media/launch-maintenance-console.gif[] to start the maintenance console.

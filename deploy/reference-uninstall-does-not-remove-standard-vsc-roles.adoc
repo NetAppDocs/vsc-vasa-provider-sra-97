@@ -1,8 +1,8 @@
 ---
 permalink: deploy/reference-uninstall-does-not-remove-standard-vsc-roles.html
 sidebar: sidebar
-keywords: 
-summary: 'When you uninstall Virtual Storage Console for VMware vSphere \(VSC\), the standard VSC roles remain intact. This is expected behavior and does not affect the performance of VSC or your ability to upgrade to a new version of VSC. You can manually delete these roles, if required.'
+keywords: uninstall, does, not, remove, standard, vsc, roles,
+summary: "When you uninstall Virtual Storage Console for VMware vSphere (VSC), the standard VSC roles remain intact. This is expected behavior and does not affect the performance of VSC or your ability to upgrade to a new version of VSC. You can manually delete these roles, if required."
 ---
 = Uninstall does not remove standard VSC roles
 :icons: font
@@ -11,7 +11,7 @@ summary: 'When you uninstall Virtual Storage Console for VMware vSphere \(VSC\),
 [.lead]
 When you uninstall Virtual Storage Console for VMware vSphere (VSC), the standard VSC roles remain intact. This is expected behavior and does not affect the performance of VSC or your ability to upgrade to a new version of VSC. You can manually delete these roles, if required.
 
-While the uninstall operation does not remove the VSC roles, the uninstall operation removes the localized names for the VSC-specific privileges and appends the following prefix to them: "`XXX missing privilege`". For example, if you open the vSphere Edit Role dialog box after you install VSC, you will see the VSC-specific privileges listed as `XXX missing privilege.``<privilege name>``.label not found XXX`.
+While the uninstall operation does not remove the VSC roles, the uninstall operation removes the localized names for the VSC-specific privileges and appends the following prefix to them: "`XXX missing privilege`". For example, if you open the vSphere *Edit Role* dialog box after you install VSC, you will see the VSC-specific privileges listed as `XXX missing privilege.``<privilege name>``.label not found XXX`.
 
 This behavior happens because the vCenter Server does not provide an option to remove privileges.
 

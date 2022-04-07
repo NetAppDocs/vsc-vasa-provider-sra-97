@@ -1,8 +1,8 @@
 ---
 permalink: deploy/task-cleaning-the-vsphere-cached-downloaded-plug-in-packages.html
 sidebar: sidebar
-keywords: clean up browser cache
-summary: 'If plug-ins are not updated automatically after deploying or upgrading the virtual appliance for VSC, VASA Provider, and SRA, you should clean up the cached download plug-in packages on the browser and on the vCenter Serverto resolve vCenter Server plug-in issues.'
+keywords: clean, up, browser, cache, cleaning, the, vsphere, cached, downloaded, plug-in, packages,
+summary: "If plug-ins are not updated automatically after deploying or upgrading the virtual appliance for VSC, VASA Provider, and SRA, you should clean up the cached download plug-in packages on the browser and on the vCenter Serverto resolve vCenter Server plug-in issues."
 ---
 = Cleaning the vSphere cached downloaded plug-in packages
 :icons: font
@@ -11,16 +11,18 @@ summary: 'If plug-ins are not updated automatically after deploying or upgrading
 [.lead]
 If plug-ins are not updated automatically after deploying or upgrading the virtual appliance for VSC, VASA Provider, and SRA, you should clean up the cached download plug-in packages on the browser and on the vCenter Serverto resolve vCenter Server plug-in issues.
 
-== Steps
+.Steps
 
 . Logout from your existing vSphere web client or vSphere Client.
 . Remove the browser cache.
 . Remove the vSphere Client cached plug-in packages.
 +
+
+[cols="1a,1a" options="header"]
 |===
 | If you are using...| Perform the following...
 a|
-*Windows vCenter server*
+Windows vCenter server
 a|
 Remove the following folders com.netapp.vasa.vvol.webclient-x.x.x.xxxx, com.netapp.nvpf.webclient-x.x.x.xxxx, and com.netapp.vsch5-x.x.x.xxxx located at:
 
@@ -28,7 +30,7 @@ Remove the following folders com.netapp.vasa.vvol.webclient-x.x.x.xxxx, com.neta
  ** vSphere Client(HTML5) path: C:\ProgramData\VMware\vCenterServer\cfg\vsphere-ui\vc-packages\vsphere-client-serenity
 
 a|
-*VCSA*
+VCSA
 a|
 
  .. SSH into the VCSA appliance.
