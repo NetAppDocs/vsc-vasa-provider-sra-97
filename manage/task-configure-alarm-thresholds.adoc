@@ -1,8 +1,8 @@
 ---
 permalink: manage/task-configure-alarm-thresholds.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use VSC to set alarms to notify you when volume thresholds and aggregate thresholds reach the set limits.'
+keywords: configuring, alarm, thresholds,
+summary: "You can use VSC to set alarms to notify you when volume thresholds and aggregate thresholds reach the set limits."
 ---
 = Configuring alarm thresholds
 :icons: font
@@ -11,7 +11,7 @@ summary: 'You can use VSC to set alarms to notify you when volume thresholds and
 [.lead]
 You can use VSC to set alarms to notify you when volume thresholds and aggregate thresholds reach the set limits.
 
-== Steps
+.Steps
 
 . From the Virtual Storage Console**Home** page, click *Settings*.
 . Click *Unified Appliance Settings*.
