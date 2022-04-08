@@ -1,23 +1,23 @@
 ---
 permalink: deploy/task-regenerating-an-ssl-certificate-for-vsc.html
 sidebar: sidebar
-keywords: 
-summary: 'The SSL certificate is generated when you install \(VSC\). The distinguished name \(DN\) that is generated for the SSL certificate might not be a common name \(CN\) that the client machines recognize. By changing the keystore and private key passwords, you can regenerate the certificate and create a site-specific certificate.'
+keywords: regenerating, ssl, certificate, virtual, storage, console,
+summary: "The SSL certificate is generated when you install (VSC). The distinguished name (DN) that is generated for the SSL certificate might not be a common name (CN) that the client machines recognize. By changing the keystore and private key passwords, you can regenerate the certificate and create a site-specific certificate."
 ---
-= Regenerating an SSL certificate for
+= Regenerating an SSL certificate for Virtual Storage Console
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 The SSL certificate is generated when you install (VSC). The distinguished name (DN) that is generated for the SSL certificate might not be a common name (CN) that the client machines recognize. By changing the keystore and private key passwords, you can regenerate the certificate and create a site-specific certificate.
 
-== About this task
+.About this task
 
 You can enable remote diagnostic using the maintenance console and generate site-specific certificate.
 
-https://kb.netapp.com/app/answers/answer_view/a_id/1075654[NetApp Knowledgebase Answer 1075654: Virtual Storage Console 7.x: Implementing CA signed certificates]
+https://kb.netapp.com/app/answers/answer_view/a_id/1075654[NetApp Knowledgebase Answer 1075654: Virtual Storage Console 7.x: Implementing CA signed certificates^]
 
-== Steps
+.Steps
 
 . Log in to the maintenance console.
 . Enter `1` to access the `Application Configuration` menu.

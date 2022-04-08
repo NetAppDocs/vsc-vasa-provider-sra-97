@@ -1,8 +1,8 @@
 ---
 permalink: deploy/task-running-the-gos-timeout-scripts-for-windows.html
 sidebar: sidebar
-keywords: 
-summary: 'The guest operating system \(OS\) timeout scripts set the SCSI I/O timeout settings for Windows guest operating systems. You can specify either a 60-second timeout or a 190-second timeout. You must reboot the Windows guest OS for the settings to take effect.'
+keywords: setting, timeout, values, windows, guest, operating, systems,
+summary: "The guest operating system (OS) timeout scripts set the SCSI I/O timeout settings for Windows guest operating systems. You can specify either a 60-second timeout or a 190-second timeout. You must reboot the Windows guest OS for the settings to take effect."
 ---
 = Setting timeout values for Windows guest operating systems
 :icons: font
@@ -11,11 +11,11 @@ summary: 'The guest operating system \(OS\) timeout scripts set the SCSI I/O tim
 [.lead]
 The guest operating system (OS) timeout scripts set the SCSI I/O timeout settings for Windows guest operating systems. You can specify either a 60-second timeout or a 190-second timeout. You must reboot the Windows guest OS for the settings to take effect.
 
-== Before you begin
+.Before you begin
 
 You must have mounted the ISO image containing the Windows script.
 
-== Steps
+.Steps
 
 . Access the console of the Windows virtual machine, and log in to an account with Administrator privileges.
 . If the script does not automatically start, open the CD drive, and then run the `windows_gos_timeout.reg` script.

@@ -1,8 +1,8 @@
 ---
 permalink: deploy/task-running-the-gos-timeout-scripts-for-rhel4-or-sles9.html
 sidebar: sidebar
-keywords: 
-summary: 'The guest operating system \(OS\) timeout scripts set the SCSI I/O timeout settings for versions 4, 5, 6, and 7 of Red Hat Enterprise Linux and versions 9, 10, and 11 of SUSE Linux Enterprise Server. You can specify either a 60-second timeout or a 190-second timeout. You must run the script each time you upgrade to a new version of Linux.'
+keywords: setting, timeout, values, linux, guest, operating, systems,
+summary: "The guest operating system (OS) timeout scripts set the SCSI I/O timeout settings for versions 4, 5, 6, and 7 of Red Hat Enterprise Linux and versions 9, 10, and 11 of SUSE Linux Enterprise Server. You can specify either a 60-second timeout or a 190-second timeout. You must run the script each time you upgrade to a new version of Linux."
 ---
 = Setting timeout values for Linux guest operating systems
 :icons: font
@@ -11,11 +11,11 @@ summary: 'The guest operating system \(OS\) timeout scripts set the SCSI I/O tim
 [.lead]
 The guest operating system (OS) timeout scripts set the SCSI I/O timeout settings for versions 4, 5, 6, and 7 of Red Hat Enterprise Linux and versions 9, 10, and 11 of SUSE Linux Enterprise Server. You can specify either a 60-second timeout or a 190-second timeout. You must run the script each time you upgrade to a new version of Linux.
 
-== Before you begin
+.Before you begin
 
 You must have mounted the ISO image containing the Linux script.
 
-== Steps
+.Steps
 
 . Access the console of the Linux virtual machine, and log in to an account with root privileges.
 . Run the `linux_gos_timeout-install.sh` script.

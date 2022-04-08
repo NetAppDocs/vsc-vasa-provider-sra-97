@@ -1,20 +1,23 @@
 ---
 permalink: deploy/task-upgrading-storage-replication-adapter.html
 sidebar: sidebar
-keywords: SRA,upgrade
-summary: 'After upgrading your virtual appliance for VSC, VASA Provider, and SRA or deploying the latest version of the virtual appliance, you have to upgrade your Storage Replication Adapter \(SRA\).'
+keywords: sra, upgrade, upgrading, storage, replication, adapter,
+summary: "After upgrading your virtual appliance for VSC, VASA Provider, and SRA or deploying the latest version of the virtual appliance, you have to upgrade your Storage Replication Adapter (SRA)."
 ---
 = Upgrading Storage Replication Adapter
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 After upgrading your virtual appliance for VSC, VASA Provider, and SRA or deploying the latest version of the virtual appliance, you have to upgrade your Storage Replication Adapter (SRA).
 
-== Steps
+.Steps
 
 . You must upgrade to the latest adapter using one of the following procedures based on your adapter:
 +
+
+[cols="1a,1a" options="header"]
 |===
     a|
 *For...*
@@ -36,7 +39,7 @@ a|
 
  .. Log in to the SRM Appliance Managementpage.
  .. Click *Storage Replication Adapter*, and click *Delete* to remove the existing SRA.
- .. Click *New Adapter* > *Browse*.
+ .. Click menu:New Adapter[Browse].
  .. Click to select the latest SRA tarball file that you downloaded from NetApp support site, and then click *Install*.
  .. Configure SRA on the SRM Appliance.
 +

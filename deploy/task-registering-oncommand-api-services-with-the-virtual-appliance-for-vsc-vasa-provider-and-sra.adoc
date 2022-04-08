@@ -1,8 +1,8 @@
 ---
 permalink: deploy/task-registering-oncommand-api-services-with-the-virtual-appliance-for-vsc-vasa-provider-and-sra.html
 sidebar: sidebar
-keywords: virtual volume datastores
-summary: 'If you are using ONTAP 9.6 or earlier, then the vVol dashboard can display the details of VMware Virtual Volumes \(vVols\) datastores and virtual machines only if you have registered for VASA Provider to obtain data for the vVols VM and datastore reports.'
+keywords: virtual, volume, datastores, registering, virtual, appliance, vsc, vasa, provider, sra,
+summary: "If you are using ONTAP 9.6 or earlier, then the vVol dashboard can display the details of VMware Virtual Volumes (vVols) datastores and virtual machines only if you have registered for VASA Provider to obtain data for the vVols VM and datastore reports."
 ---
 = Registering with the virtual appliance for VSC, VASA Provider, and SRA
 :icons: font
@@ -11,7 +11,7 @@ summary: 'If you are using ONTAP 9.6 or earlier, then the vVol dashboard can dis
 [.lead]
 If you are using ONTAP 9.6 or earlier, then the vVol dashboard can display the details of VMware Virtual Volumes (vVols) datastores and virtual machines only if you have registered for VASA Provider to obtain data for the vVols VM and datastore reports.
 
-== Before you begin
+.Before you begin
 
 You must have downloaded 2.1 or later from .
 
@@ -20,19 +20,19 @@ You must have downloaded 2.1 or later from .
 The vVol dashboard displays performance metrics only when the SAN vVols datastores and virtual machines are configured using ONTAP 9.3 or later.
 ====
 
-== Steps
+.Steps
 
 . From the Virtual Storage Console (VSC) *Home* page, click *Settings*.
 . Click *Manage Extension* in the *Administrative Settings* tab.
 . Use the *Register OnCommand API Services* slider to enable .
 . Enter the IP address, service port, and credentials for .
 +
-You can also use the Manage VASA Provider Extensions dialog box for the following modifications:
+You can also use the *Manage VASA Provider Extensions* dialog box for the following modifications:
 
  ** To update registration when there is any change to the credentials.
  ** To unregister when you no longer require the vVol dashboard.
 +
-You must clear the Register OnCommand API Services checkbox to remove the registration for VASA Provider.
+You must clear the *Register OnCommand API Services* checkbox to remove the registration for VASA Provider.
 
 . Click *Apply*.
 +
@@ -40,4 +40,4 @@ The vVol dashboard displays the metrics for ONTAP 9.6 or earlier SAN vVol datast
 
 *Related information*
 
-https://mysupport.netapp.com/site/[NetApp Support]
+https://mysupport.netapp.com/site/[NetApp Support^]
