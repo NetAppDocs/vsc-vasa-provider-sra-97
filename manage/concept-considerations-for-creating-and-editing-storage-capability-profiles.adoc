@@ -1,8 +1,8 @@
 ---
 permalink: manage/concept-considerations-for-creating-and-editing-storage-capability-profiles.html
 sidebar: sidebar
-keywords: 
-summary: 'You should be aware of the considerations for creating and editing storage capability profiles.'
+keywords: considerations, for, creating, and, editing, storage, capability, profiles,
+summary: "You should be aware of the considerations for creating and editing storage capability profiles."
 ---
 = Considerations for creating and editing storage capability profiles
 :icons: font

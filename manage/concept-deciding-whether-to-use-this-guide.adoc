@@ -1,8 +1,8 @@
 ---
 permalink: manage/concept-deciding-whether-to-use-this-guide.html
 sidebar: sidebar
-keywords: scope of guide
-summary: 'You can use this guide to quickly find information about tasks involving provisioning and optimizing storage and monitoring datastores and virtual machines.'
+keywords: scope, of, guide, deciding, whether, to, use, this, guide,
+summary: "You can use this guide to quickly find information about tasks involving provisioning and optimizing storage and monitoring datastores and virtual machines."
 ---
 = Deciding whether to use this guide
 :icons: font
@@ -31,4 +31,4 @@ Most of the tasks presented in this guide also require that only one operation a
 
 If you have questions about VSC or want share information with other VSC users, you can go to the NetApp Communities Forum.
 
-https://communities.netapp.com/community/products_and_solutions/virtualization/vsc[NetApp Community: Virtual Storage Console for VMware vSphere]
+https://communities.netapp.com/community/products_and_solutions/virtualization/vsc[NetApp Community: Virtual Storage Console for VMware vSphere^]

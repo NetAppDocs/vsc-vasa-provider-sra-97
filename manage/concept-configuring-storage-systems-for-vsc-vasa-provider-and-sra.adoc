@@ -1,8 +1,8 @@
 ---
 permalink: manage/concept-configuring-storage-systems-for-vsc-vasa-provider-and-sra.html
 sidebar: sidebar
-keywords: 
-summary: 'You should add storage systems to the virtual appliance and set default credentials, if required, by using the VSC interface.'
+keywords: configuring, storage, systems, for, vsc, vasa, provider, sra,
+summary: "You should add storage systems to the virtual appliance and set default credentials, if required, by using the VSC interface."
 ---
 = Configuring storage systems for VSC, VASA Provider, and SRA
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: manage/concept-configuring-replication-for-vvols-datastore.html
 sidebar: sidebar
-keywords: 
-summary: 'You can configure replication for your vVols datastore using the virtual appliance for VSC, VASA Provider, and SRA. The main aim of vVols replication is to protect critical virtual machines during disaster recovery using VMware Site Recovery Manager \(SRM\).'
+keywords: configuring, replication, for, vvols, datastore,
+summary: "You can configure replication for your vVols datastore using the virtual appliance for VSC, VASA Provider, and SRA. The main aim of vVols replication is to protect critical virtual machines during disaster recovery using VMware Site Recovery Manager (SRM)."
 ---
 = Configuring replication for vVols datastore
 :icons: font

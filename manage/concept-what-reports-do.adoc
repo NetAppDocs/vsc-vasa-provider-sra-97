@@ -1,8 +1,8 @@
 ---
 permalink: manage/concept-what-reports-do.html
 sidebar: sidebar
-keywords: 
-summary: 'Reports display detailed information about datastores and virtual machines, that enables you to review and identify potential issues with datastores and virtual machines in your vCenter Server.'
+keywords: what, reports, do,
+summary: "Reports display detailed information about datastores and virtual machines, that enables you to review and identify potential issues with datastores and virtual machines in your vCenter Server."
 ---
 = What reports do
 :icons: font
