@@ -1,8 +1,8 @@
 ---
 permalink: manage/reference-verifying-vvol-dashboard-data-requirements.html
 sidebar: sidebar
-keywords: vVol dashboard
-summary: 'You must verify some important requirements of the vVol dashboard to display dynamic details of the VMware Virtual Volumes \(vVols\) datastores and virtual machines.'
+keywords: vVol, dashboard, data, requirements,
+summary: "You must verify some important requirements of the vVol dashboard to display dynamic details of the VMware Virtual Volumes (vVols) datastores and virtual machines."
 ---
 = vVol dashboard data requirements
 :icons: font
@@ -13,6 +13,7 @@ You must verify some important requirements of the vVol dashboard to display dyn
 
 The following table presents an overview of what you should verify if the vVol dashboard does not display the performance metrics for the provisioned SAN vVols datastores and virtual machines.
 
+[cols="1a,1a" options="header"]
 |===
 | Considerations| Description
 a|

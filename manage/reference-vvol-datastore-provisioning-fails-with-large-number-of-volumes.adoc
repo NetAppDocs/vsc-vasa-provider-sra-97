@@ -1,8 +1,8 @@
 ---
 permalink: manage/reference-vvol-datastore-provisioning-fails-with-large-number-of-volumes.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: VVol, datastore, provisioning, fails, with, large, number, of, volumes,
+summary: "VVol datastore provisioning fails with large number of volumes"
 ---
 = VVol datastore provisioning fails with large number of volumes
 :icons: font
@@ -18,4 +18,4 @@ VVol datastore provisioning fails because of socket timeouts between VSC and VAS
 
 == Corrective action
 
-You should either create VVol datastore with less than six volumes or increase the VVol datastore size after provisioning using the Expand VVol Datastore option.
+You should either create VVol datastore with less than six volumes or increase the VVol datastore size after provisioning using the *Expand VVol Datastore* option.

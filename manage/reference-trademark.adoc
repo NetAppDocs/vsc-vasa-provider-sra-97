@@ -1,8 +1,8 @@
 ---
 permalink: manage/reference-trademark.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: Trademark
+summary: "Trademark"
 ---
 = Trademark
 :icons: font
@@ -10,4 +10,4 @@ summary: ''
 
 NETAPP, the NETAPP logo, and the marks listed on the NetApp Trademarks page are trademarks of NetApp, Inc. Other company and product names may be trademarks of their respective owners.
 
-http://www.netapp.com/us/legal/netapptmlist.aspx
+http://www.netapp.com/us/legal/netapptmlist.aspx[NetApp trademarks^]

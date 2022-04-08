@@ -1,8 +1,8 @@
 ---
 permalink: manage/reference-error-while-accessing-the-vsc-summary-page-of-virtual-appliance.html
 sidebar: sidebar
-keywords: 
-summary: 'The error message /opt/netapp/vscserver/etc/vsc/performance.json \(No such file or directory\) might be displayed when you try to access the VSC Summary page after you deploy the virtual appliance for Virtual Storage Console \(VSC\), VASA Provider, and Storage Replication Adapter \(SRA\).'
+keywords: error, while, accessing, the, vsc, summary, page, of, virtual, appliance,
+summary: "The error message /opt/netapp/vscserver/etc/vsc/performance.json (No such file or directory) might be displayed when you try to access the VSC Summary page after you deploy the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA)."
 ---
 = Error while accessing the VSC Summary page of virtual appliance
 :icons: font

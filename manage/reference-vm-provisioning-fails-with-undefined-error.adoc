@@ -1,8 +1,8 @@
 ---
 permalink: manage/reference-vm-provisioning-fails-with-undefined-error.html
 sidebar: sidebar
-keywords: 
-summary: 'Virtual machine provisioning operations such as Create, Clone, Power on, Power off, Suspend, Migrate, and update VM Storage Profile on VVol datastore might fail with a generic error message in task manager that does not indicate whether the issue is with VASA Provider or VMware.'
+keywords: virtual, machine, provisioning, fails, with, an, undefined, error,
+summary: "Virtual machine provisioning operations such as Create, Clone, Power on, Power off, Suspend, Migrate, and update VM Storage Profile on VVol datastore might fail with a generic error message in task manager that does not indicate whether the issue is with VASA Provider or VMware."
 ---
 = Virtual machine provisioning fails with an undefined error
 :icons: font

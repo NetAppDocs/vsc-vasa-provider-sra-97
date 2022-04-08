@@ -1,8 +1,8 @@
 ---
 permalink: manage/reference-editing-vm-storage-policies-after-upgrade-throws-error-message.html
 sidebar: sidebar
-keywords: VASA Provider
-summary: 'After upgrading from the 7.0 version of the virtual appliance for Virtual Storage Console \(VSC\), VASA Provider, and Storage Replication Adapter \(SRA\) to the latest version of the virtual appliance for VSC, VASA Provider, and SRA, if you attempt to edit an existing VM Storage Policy before you configure any new storage capability profiles, the following error message might be displayed: There are incorrect or missing values below.'
+keywords: vasa, provider, issue, while, editing, VM, Storage, policies, after, upgrade,
+summary: "After upgrading from the 7.0 version of the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA) to the latest version of the virtual appliance for VSC, VASA Provider, and SRA, if you attempt to edit an existing VM Storage Policy before you configure any new storage capability profiles, the following error message might be displayed: There are incorrect or missing values below."
 ---
 = Issue while editing VM Storage Policies after upgrade
 :icons: font
