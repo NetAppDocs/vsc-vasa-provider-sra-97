@@ -2,7 +2,7 @@
 permalink: deploy/task-configuring-esx-server-multipathing-and-timeout-settings.html
 sidebar: sidebar
 keywords: configuring, esxi, server, multipathing, timeout, settings,
-summary: 'Virtual Storage Console for VMware vSphere checks and sets the ESXi host multipathing settings and HBA timeout settings that work best with storage systems.'
+summary: "Virtual Storage Console for VMware vSphere checks and sets the ESXi host multipathing settings and HBA timeout settings that work best with storage systems."
 ---
 = Configuring ESXi server multipathing and timeout settings
 :experimental:
@@ -24,6 +24,6 @@ This process might take a long time, depending on your configuration and system 
 +
 The standard, recommended values are set by default.
 +
-image::vsc-recommended-hosts-settings.gif[]
+image::../media/vsc-recommended-hosts-settings.gif[]
 
 . Click *OK*.
