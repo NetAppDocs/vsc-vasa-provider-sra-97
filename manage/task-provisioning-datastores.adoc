@@ -1,17 +1,18 @@
 ---
 permalink: manage/task-provisioning-datastores.html
 sidebar: sidebar
-keywords: 
-summary: 'Provisioning a datastore creates a logical container for your virtual machines and their virtual machine disks \(VMDKs\). You can provision a datastore, and then attach the datastore to a single host, to all of the hosts in a cluster, or to all of the hosts in a datacenter.'
+keywords: provisioning, datastores,
+summary: "Provisioning a datastore creates a logical container for your virtual machines and their virtual machine disks (VMDKs). You can provision a datastore, and then attach the datastore to a single host, to all of the hosts in a cluster, or to all of the hosts in a datacenter."
 ---
 = Provisioning datastores
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 Provisioning a datastore creates a logical container for your virtual machines and their virtual machine disks (VMDKs). You can provision a datastore, and then attach the datastore to a single host, to all of the hosts in a cluster, or to all of the hosts in a datacenter.
 
-== Before you begin
+.Before you begin
 
 * To provision a datastore on an SVM that is directly connected to Virtual Storage Console (VSC), you must have added the SVM to VSC by using a user account that has the appropriate privileges, not the default vsadmin user account or vsadmin role.
 +
@@ -28,7 +29,7 @@ This preference file is also applicable to VVol datastore creation. _Virtual Sto
 * If you have enabled VASA Provider and you want to specify storage capability profiles for your NFS datastores or VMFS datastores, then you must have created one or more storage capability profiles.
 * To create an NFSv4.1 datastore, you must have enabled NFSv4.1 at the SVM level.
 
-== About this task
+.About this task
 
 The *Provision Datastore* option enables you to specify a storage capability profile for the datastore. Storage capability profiles help in specifying consistent service level objectives (SLOs) and simplify the provisioning process. You can specify a storage capability profile only if you have enabled VASA Provider. The virtual appliance for VSC, VASA Provider, and SRA supports the following protocols:
 
@@ -47,10 +48,11 @@ VMware does not support NFSv4.1 with datastore clusters.
 
 If a storage capability profile is not specified during provisioning, you can later use the Storage Mapping page to map a datastore to a storage capability profile.
 
-== Steps
+.Steps
 
 . You can access the datastore provisioning wizard using one of the following:
 +
+[cols="1a,1a" options="header"]
 |===
 | If you select from ...| Perform the following...
 a|
@@ -75,36 +77,38 @@ a|
 
 . Specify the hosts on which you want to mount the datastore.
 +
+[cols="1a,1a" options="header"]
 |===
 | To make the datastore available to...| Do this...
 a|
 All of the hosts in a datacenter
 a|
-Right-click a datacenter, and then select *NetApp VSC* > *Provision Datastore*.
+Right-click a datacenter, and then select menu:NetApp VSC[Provision Datastore].
 a|
 All of the hosts in a cluster
 a|
-Right-click a host cluster, and then select *NetApp VSC* > *Provision Datastore*.
+Right-click a host cluster, and then select menu:NetApp VSC[Provision Datastore].
 a|
 A single host
 a|
-Right-click a host, and select *NetApp VSC* > *Provision Datastore*.
+Right-click a host, and select menu:NetApp VSC[Provision Datastore].
 |===
 
 . Complete the fields in the *New Datastore* dialog box to create the datastore.
 +
 Most of the fields in the dialog box are self-explanatory. The following table describes some of the fields for which you might require guidance.
 +
+[cols="1a,1a" options="header"]
 |===
 | Section| Description
 a|
 General
 a|
-The General section of the New Datastore provisioning dialog box provides options to enter the destination, name, size, type, and protocol for the new datastore. You can select *NFS* or *VMFS* protocol to configure a traditional datastore. The VVol datastore type is used to configure a VVol datastore. If VASA Provider is enabled, then you can also decide whether to use storage capability profiles. The *Datastore cluster* option is available only for traditional datastores. You should use the *Advanced* option to specify *VMFS5* or *VMFS6* file system.
+The *General* section of the *New Datastore provisioning* dialog box provides options to enter the destination, name, size, type, and protocol for the new datastore. You can select *NFS* or *VMFS* protocol to configure a traditional datastore. The VVol datastore type is used to configure a VVol datastore. If VASA Provider is enabled, then you can also decide whether to use storage capability profiles. The *Datastore cluster* option is available only for traditional datastores. You should use the *Advanced* option to specify *VMFS5* or *VMFS6* file system.
 a|
 Storage system
 a|
-You can select one of the listed storage capability profiles if you have selected the option in the General section. The system-recommended values for the storage system and storage virtual machine are populated for ease. But you can modify the values if required.
+You can select one of the listed storage capability profiles if you have selected the option in the *General* section. The system-recommended values for the storage system and storage virtual machine are populated for ease. But you can modify the values if required.
 a|
 Storage attributes
 a|

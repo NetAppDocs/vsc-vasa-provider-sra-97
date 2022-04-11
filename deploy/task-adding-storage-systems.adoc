@@ -2,7 +2,7 @@
 permalink: deploy/task-adding-storage-systems.html
 sidebar: sidebar
 keywords: adding, storage, systems, vsc,
-summary: 'You can manually add storage system to Virtual Storage Console \(VSC\).'
+summary: "You can manually add storage system to Virtual Storage Console (VSC)."
 ---
 = Adding storage systems to VSC
 :experimental:

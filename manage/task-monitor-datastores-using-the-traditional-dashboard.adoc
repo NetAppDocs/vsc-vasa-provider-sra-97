@@ -1,8 +1,8 @@
 ---
 permalink: manage/task-monitor-datastores-using-the-traditional-dashboard.html
 sidebar: sidebar
-keywords: 
-summary: 'You can monitor the traditional datastores and virtual machines using the traditional dashboard of the virtual appliance for Virtual Storage Console, VASA Provider, and Storage Replication Adapter. The dashboard data enables you to analyze the datastore usage and to take corrective action to prevent the virtual machines from running into space-related constraints.'
+keywords: monitoring, datastores, virtual, machines, using, the, traditional, dashboard,
+summary: "You can monitor the traditional datastores and virtual machines using the traditional dashboard of the virtual appliance for Virtual Storage Console, VASA Provider, and Storage Replication Adapter. The dashboard data enables you to analyze the datastore usage and to take corrective action to prevent the virtual machines from running into space-related constraints."
 ---
 = Monitoring datastores and virtual machines using the traditional dashboard
 :icons: font
@@ -11,32 +11,32 @@ summary: 'You can monitor the traditional datastores and virtual machines using 
 [.lead]
 You can monitor the traditional datastores and virtual machines using the traditional dashboard of the virtual appliance for Virtual Storage Console, VASA Provider, and Storage Replication Adapter. The dashboard data enables you to analyze the datastore usage and to take corrective action to prevent the virtual machines from running into space-related constraints.
 
-== Before you begin
+.Before you begin
 
 You should select either the *Enable Storage I/O Control and statistics collection* or *Disable Storage I/O Control but enable statistics collection* option in the Configure Storage I/O Control dialog box. You can enable Storage I/O Control only if you have the Enterprise Plus license from VMware.
 
-https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.resmgmt.doc/GUID-BB5D9BAB-9E0E-4204-A76A-54634CD8AD51.html[VMware vSphere Documentation: Enable Storage I/O Control]
+https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.resmgmt.doc/GUID-BB5D9BAB-9E0E-4204-A76A-54634CD8AD51.html[VMware vSphere Documentation: Enable Storage I/O Control^]
 
-== About this task
+.About this task
 
 The VSC dashboard displays IOPS, space utilized, latency, and committed capacity metrics that are obtained from your vCenter Server. ONTAP provides volume space saving metrics to the VSC dashboard. These performance parameters enable you to identify performance bottlenecks in the virtual environment and to take corrective action to resolve the issues.
 
 The traditional dashboard of the virtual appliance for VSC, VASA Provider, and SRA enables you to view either NFS datastores or VMFS datastores. You can click a datastore to navigate to the datastore details view that is provided by the vCenter Server instance to view and fix any issues with the datastores in your vCenter Server.
 
-== Steps
+.Steps
 
 . From the vSphere Client home page, click *Virtual Storage Console*.
 . Select the required vCenter Server using the *vCenter Server* drop-down menu to view the datastores.
 . Click *Traditional Dashboard*.
 +
-The Datastores portlet provides the following details:
+The *Datastores* portlet provides the following details:
 
  ** The number of traditional datastores along with their performance metrics that are managed by VSC in your vCenter Server instance
  ** The top five datastores based on resource usage and performance parameters that can be modified, if required
 You can change the listing of the datastores based on the space utilized, IOPS, or latency and in the order required.
 
 +
-The Virtual Machines portlet provides the following details:
+The *Virtual Machines* portlet provides the following details:
 
  ** Number of virtual machines using NetAppdatastores in your vCenter Server
  ** Top five virtual machines based on committed capacity, latency, and uptime

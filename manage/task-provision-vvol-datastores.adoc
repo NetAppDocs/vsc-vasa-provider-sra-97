@@ -1,17 +1,18 @@
 ---
 permalink: manage/task-provision-vvol-datastores.html
 sidebar: sidebar
-keywords: 
-summary: 'You can provision a vVols datastore using the Provision Datastore wizard only if VASA Provider is enabled in your virtual appliance for VSC, VASA Provider, and SRA.'
+keywords: provisioning, vvols, datastores,
+summary: "You can provision a vVols datastore using the Provision Datastore wizard only if VASA Provider is enabled in your virtual appliance for VSC, VASA Provider, and SRA."
 ---
 = Provisioning vVols datastores
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can provision a vVols datastore using the Provision Datastore wizard only if VASA Provider is enabled in your virtual appliance for VSC, VASA Provider, and SRA.
+You can provision a vVols datastore using the *Provision Datastore* wizard only if VASA Provider is enabled in your virtual appliance for VSC, VASA Provider, and SRA.
 
-== Before you begin
+.Before you begin
 
 * You should ensure that the subnet details of all the networks to which the ESXi hosted is connected is entered in the `Kaminoprefs.xml`.
 +
@@ -19,11 +20,11 @@ See *Enabling datastore mounting across different subnets* section in _VSC 9.7 D
 
 * You should configure similar replication policy and schedule on the datastores at both the source and target sites for reverse replication to be successful.
 
-== About this task
+.About this task
 
 The *Provision datastore* menu enables you to specify a storage capability profile for the datastore, which helps in specifying consistent service level objectives (SLOs) and simplifies the provisioning process. You can specify a storage capability profile only if you have enabled VASA Provider.
 
-FlexVol volumes that are used as backing storage are displayed on the vVol dashboard only if they are running ONTAP 9.5 or later. You should not use the vCenter ServerNew Datastore wizard to provision vVols datastores.
+FlexVol volumes that are used as backing storage are displayed on the vVol dashboard only if they are running ONTAP 9.5 or later. You should not use the vCenter Server *New Datastore* wizard to provision vVols datastores.
 
 * You must use cluster credentials to create vVols datastores.
 +
@@ -32,38 +33,40 @@ You cannot use SVM credentials to create vVols datastores.
 * VASA Provider does not support the cloning of a virtual machine that is hosted on the vVols datastore of one protocol to another datastore with a different protocol.
 * You should have completed cluster pairing and SVM pairing both on the source and destination sites.
 
-== Steps
+.Steps
 
 . From the vSphere Client home page, click *Hosts and Clusters*.
 . In the navigation pane, select the datacenter on which you want to provision the datastore.
 . Specify the hosts on which you want to mount the datastore.
 +
+[cols="1a,1a" options="header"]
 |===
 | To make the datastore available to...| Do this...
 a|
 All of the hosts in a datacenter
 a|
-Right-click a datacenter, and then select *NetApp VSC* > *Provision Datastore*.
+Right-click a datacenter, and then select menu:NetApp VSC[Provision Datastore].
 a|
 All of the hosts in a cluster
 a|
-Right-click a cluster, and then select *NetApp VSC* > *Provision Datastore*.
+Right-click a cluster, and then select menu:NetApp VSC[Provision Datastore].
 a|
 A single host
 a|
-Right-click a host, and then select *NetApp VSC* > *Provision Datastore*.
+Right-click a host, and then select menu:NetApp VSC[Provision Datastore].
 |===
 
 . Complete the fields in the *New Datastore* dialog box to create the datastore.
 +
 Most of the fields in the dialog box are self-explanatory. The following table describes some of the fields for which you might require guidance.
 +
+[cols="1a,1a" options="header"]
 |===
 | Section| Description
 a|
 General
 a|
-The General section of the New Datastore dialog box provides options to enter the location, name, description, type, and protocol for the new datastore. The vVols datastore type is used to configure a vVols datastore.
+The *General* section of the *New Datastore* dialog box provides options to enter the location, name, description, type, and protocol for the new datastore. The vVols datastore type is used to configure a vVols datastore.
 [NOTE]
 ====
 If you are provisioning iSCSI vVols datastore for vVols replication, then before creating vVols datastore at the target site, you need to perform SnapMirror update and cluster rediscovery.
@@ -78,11 +81,11 @@ While creating FlexVol volumes in ONTAP, you should ensure to create them with t
 ====
 
 After FlexVol volumes are created and SnapMirror is initialized in ONTAP, you should run a storage rediscovery in VSC to be able to see the new volumes.
-    a|
-    Storage attributes
-    a|
-    You should select the schedule for SnapMirror and the required FlexVol volume from the existing list. This schedule should be similar to the one selected in the VM Storage Policies page. The user should have created FlexVol volumes on ONTAP with SnapMirror that are listed. You can select the default storage capability profile to be used for creating vVols using the **Default storage capability profile**option.
-    |===
+a|
+Storage attributes
+a|
+You should select the schedule for SnapMirror and the required FlexVol volume from the existing list. This schedule should be similar to the one selected in the VM Storage Policies page. The user should have created FlexVol volumes on ONTAP with SnapMirror that are listed. You can select the default storage capability profile to be used for creating vVols using the *Default storage capability profile* option.
+|===
 
 . In the *Summary* section, click *Finish*.
 +

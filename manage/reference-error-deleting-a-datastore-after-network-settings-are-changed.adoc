@@ -1,7 +1,7 @@
 ---
 permalink: manage/reference-error-deleting-a-datastore-after-network-settings-are-changed.html
 sidebar: sidebar
-keywords: delete datastore,troubleshooting errors
+keywords: delete, datastore,troubleshooting errors
 summary: "Error deleting a datastore after network settings are changed"
 ---
 = Error deleting a datastore after network settings are changed
