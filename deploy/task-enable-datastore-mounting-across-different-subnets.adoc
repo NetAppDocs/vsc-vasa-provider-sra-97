@@ -24,7 +24,7 @@ When datastore provisioning fails, VSC logs the following error messages:
 . Log in to your vCenter Server instance.
 . Launch the maintenance console using your unified appliance virtual machine.
 +
-link:task-accessing-virtual-appliance-maiintenance-console-options.md#[Accessing the maintenance console options of the virtual appliance for VSC, VASA Provider, and SRA]
+link:task-accessing-virtual-appliance-maiintenance-console-options.html[Accessing the maintenance console options of the virtual appliance for VSC, VASA Provider, and SRA]
 
 . Enter `4` to access the *Support and Diagnostics* option.
 . Enter `2` to access the *Access Diagnostic Shell* option.

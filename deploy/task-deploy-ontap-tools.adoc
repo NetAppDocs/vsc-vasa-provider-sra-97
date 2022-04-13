@@ -39,7 +39,7 @@ If ICMP is disabled, then the initial configuration of the virtual appliance for
 
 If you are deploying a fresh installation of the virtual appliance for VSC, VASA Provider, and SRA, then VASA Provider is enabled by default. But in case of an upgrade from an earlier release of the virtual appliance, the state of VASA Provider is retained and you might need to enable VASA Provider manually.
 
-link:task-enable-vasa-provider-for-configuring-virtual-datastores.md#[Enabling VASA Provider for configuring virtual datastores]
+link:task-enable-vasa-provider-for-configuring-virtual-datastores.html[Enabling VASA Provider for configuring virtual datastores]
 
 .Steps
 
