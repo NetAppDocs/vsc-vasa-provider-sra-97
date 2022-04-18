@@ -11,27 +11,27 @@ sidebar:
       url: /index.html
     - title: Release notes
       url: /release-notes.html
+    - title: Quick Start
+      url: /qsg.html
     - section: deploy
     - section: manage
+    - title: Legal notices
+      url: /legal-notices.html  
 homepage:
   tiles:
-  - title: Get started
-    links:
-    - title: Release notes
-      url: /release-notes.html
-    - title: Quick start
-      url: /qsg.html
-  - title: Use ONTAP tools
-    links:
-    - title: Provision traditional datastores
-      url: /configure/task_provision_datastores.html
-  - title: More resources
-    links:
-    - title: Documentation for earlier versions of ONTAP tools for VMware
-      url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=63792
-    - title: NetApp Knowledge Base - ONTAP tools
-      url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/VSC_and_VASA_Provider
-    - title: NetApp Import Utility - Video
-      url: https://www.youtube.com/watch?v=CEQmIEzNVfA
-    - title: NetApp Community - ONTAP tools
-      url: https://community.netapp.com/t5/VMware-Solutions-Discussions/bd-p/vmware-solutions-discussions
+    - title: Get started
+      links:
+        - title: Release notes
+          url: /release-notes.html
+        - title: Quick start
+          url: /qsg.html
+    - title: More resources
+      links:
+        - title: Documentation for earlier versions of ONTAP tools for VMware
+          url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=63792
+        - title: NetApp Knowledge Base - ONTAP tools
+          url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/VSC_and_VASA_Provider
+        - title: NetApp Import Utility - Video
+          url: https://www.youtube.com/watch?v=CEQmIEzNVfA
+        - title: NetApp Community - ONTAP tools
+          url: https://community.netapp.com/t5/VMware-Solutions-Discussions/bd-p/vmware-solutions-discussions

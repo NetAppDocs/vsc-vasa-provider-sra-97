@@ -2,4 +2,6 @@
 permalink: index.html
 sidebar: sidebar
 ---
-= VMware vSphere 9.7 docs
+= Virtual Storage Console for VMware vSphere Documentation
+
+Virtual Storage Console for VMware vSphere enables you to configure, manage, and protect your virtual datastores in your vCenter Server environment.
