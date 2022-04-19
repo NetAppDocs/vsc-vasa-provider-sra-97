@@ -5,7 +5,7 @@ keywords: qsg, ontap tools for vmware vsphere, quick start guide, installing
 summary: "Provides an overview of the deployment requirements and step by step instructions for deploying the virtual appliance for Virtual Storage Console, VASA Provider, and Storage Replication Adapter for VMware vSphere."
 ---
 
-= ONTAP tools for VMware vSphere Quick Start
+= Quick Start
 :experimental:
 :toc: macro
 :hardbreaks:
@@ -102,10 +102,8 @@ See the Interoperability Matrix Tool
 * https://imt.netapp.com/matrix/#welcome[Interoperability Matrix Tool: SRA 9.7.1^]
 |===
 
-[cols=1a, options="header"]
-|===
-| Virtual appliance for VSC, VASA Provider, and SRA requirements
-a|
+=== Virtual appliance for VSC, VASA Provider, and SRA requirements
+
 You must have:
 
 * Configured and set up your vCenter Server environment.
@@ -116,19 +114,16 @@ You must have:
 * A valid DNS hostname for the virtual appliance.
 * Downloaded and installed OnCommand API Services for ONTAP 9.6 or earlier if you want to view the vVols dashboard.
 You do not need to register OnCommand API Services with VASA Provider if you are using ONTAP 9.7.
-|===
 
-[cols=1a, options="header"]
-|===
-| Optional requirements for SRA
-a|
+=== Optional requirements for SRA
+
 If you are deploying the virtual appliance for use with VMware Site Recovery Manager, then you must have:
 
 * Downloaded the `.msi` file for the SRA plug-in only if you want to configure the Site Recovery Manager (SRM) disaster recovery solution.
 * Downloaded the `.tar.gz` file for SRA if you are using the SRM appliance.
-|===
 
-== Deploying the virtual appliance for VSC, VASA Provider, and SRA
+
+== Deploy the virtual appliance for VSC, VASA Provider, and SRA
 
 . Download the `.ova` file from the https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab[NetApp Support Site^] to a vSphere Client system to deploy the ONTAP tools.
 +
@@ -142,17 +137,17 @@ You can view the progress of the deployment from the *Tasks* tab, and wait for d
 . Verify that VSC, VASA Provider, and SRA services are running after the deployment is completed.
 
 
-=== Deploying SRA on SRM
+=== Deploy SRA on SRM
 
 You can deploy SRA either on Windows SRM server or on 8.2 SRM Appliance.
 
-==== Installing SRA on Windows SRM server
+==== Install SRA on Windows SRM server
 
 . Download the `.msi` installer for the SRA plug-in from the NetApp Support Site.
 . Double-click the downloaded `.msi` installer for the SRA plug-in and follow the on-screen instructions.
 . Enter the IP address and password of your deployed virtual appliance to complete the installation of the SRA plug-in on the SRM server.
 
-==== Uploading and configuring SRA on SRM Appliance
+==== Upload and configuring SRA on SRM Appliance
 
 . Download the `.tar.gz` file from the https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab[NetApp Support Site^].
 . On the SRM Appliance screen, click menu:Storage Replication Adapter[New Adapter].
@@ -165,7 +160,7 @@ You can deploy SRA either on Windows SRM server or on 8.2 SRM Appliance.
 . Configure SRM with the ONTAP tools IP address and password: `perl command.pl -I <va-IP> administrator <va-password>`
 A success message confirming that the storage credentials are stored is displayed.
 
-==== Updating SRA credentials
+==== Update SRA credentials
 
 . Delete the contents of the /srm/sra/conf directory using:
 .. `cd /srm/sra/conf`
@@ -174,7 +169,7 @@ A success message confirming that the storage credentials are stored is displaye
 .. `cd /srm/sra/`
 .. `perl command.pl -I <va-IP> administrator <va-password>`
 
-==== Enabling VASA Provider and SRA
+==== Enable VASA Provider and SRA
 
 . Log in to the vSphere web client by using the IP address that you specified during deployment.
 . Click the *Virtual Storage console* icon, and enter the username and password specified during deployment, click *Sign In*.
@@ -191,6 +186,6 @@ You can refer to the Virtual Storage Console, VASA Provider, and Storage Replica
 * https://www.netapp.com/support-and-training/documentation/ontap-tools-for-vmware-vsphere-documentation/?&access=a[Virtual Storage Console, VASA Provider, and Storage Replication Adapter for VMware vSphere Resources page^]
 * https://docs.netapp.com/vapp-97/index.jsp[Virtual Storage Console, VASA Provider, and Storage Replication Adapter for VMware vSphere Documentation^]
 * https://docs.vmware.com/en/Site-Recovery-Manager/8.2/com.vmware.srm.install_config.doc/GUID-B3A49FFF-E3B9-45E3-AD35-093D896596A0.html[VMware Site Recovery Manager 8.2^]
-* https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center^]
+* https://docs.netapp.com/us-en/ontap/[ONTAP 9 Documentation^]
 
 // Give at least three fun/interesting facts about you in a bulleted or numbered list
