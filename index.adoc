@@ -1,7 +1,14 @@
 ---
-permalink: index.html
+layout: astra
 sidebar: sidebar
+permalink: index.html
+lead: Virtual Storage Console for VMware vSphere enables you to configure, manage, and protect your virtual datastores in your vCenter Server environment.
+summary: Documentation for Virtual Storage Console for VMware vSphere, VSC docs, VSC documentation
 ---
-= Virtual Storage Console for VMware vSphere Documentation
 
-Virtual Storage Console for VMware vSphere enables you to configure, manage, and protect your virtual datastores in your vCenter Server environment.
+= Virtual Storage Console for VMware vSphere Documentation
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
