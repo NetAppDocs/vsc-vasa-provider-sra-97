@@ -26,9 +26,9 @@ homepage:
         - title: Quick start
           url: /qsg.html
         - title: Deploy and upgrade
-          url: /deploy.html
+          url: /deploy/concept-virtual-storage-console-overview.html
         - title: Manage
-          url: /manage.html
+          url: /manage/concept-deciding-whether-to-use-this-guide.html
 
     - title: More resources
       links:
