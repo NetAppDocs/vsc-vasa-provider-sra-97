@@ -1,13 +1,13 @@
 ---
 settings:
-  name: VMware vSphere 9.7
+  name: VSC, VASA Provider, and SRA 9.7
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
 sidebar:
   entries:
-    - title: VMware vSphere 9.7 docs
+    - title: VSC, VASA Provider, and SRA docs
       url: /index.html
     - title: Release notes
       url: release-notes.html
@@ -25,13 +25,18 @@ homepage:
           url: /release-notes.html
         - title: Quick start
           url: /qsg.html
+        - title: Deploy and upgrade
+          url: /deploy.html
+        - title: Manage
+          url: /manage.html
+
     - title: More resources
       links:
-        - title: Documentation for earlier versions of ONTAP tools for VMware
+        - title: Documentation for earlier versions of VSC, VASA Provider, and SRA
           url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=63792
-        - title: NetApp Knowledge Base - ONTAP tools
+        - title: NetApp Knowledge Base - VSC, VASA Provider, and SRA
           url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/VSC_and_VASA_Provider
         - title: NetApp Import Utility - Video
           url: https://www.youtube.com/watch?v=CEQmIEzNVfA
-        - title: NetApp Community - ONTAP tools
+        - title: NetApp Community - VSC, VASA Provider, and SRA
           url: https://community.netapp.com/t5/VMware-Solutions-Discussions/bd-p/vmware-solutions-discussions

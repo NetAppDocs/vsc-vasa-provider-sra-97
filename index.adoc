@@ -2,11 +2,11 @@
 layout: astra
 sidebar: sidebar
 permalink: index.html
-lead: Virtual Storage Console for VMware vSphere enables you to configure, manage, and protect your virtual datastores in your vCenter Server environment.
+lead: Virtual Storage Console for VSC, VASA Provider, and SRA enables you to configure, manage, and protect your virtual datastores in your vCenter Server environment.
 summary: Documentation for Virtual Storage Console for VMware vSphere, VSC docs, VSC documentation
 ---
 
-= Virtual Storage Console for VMware vSphere Documentation
+= VSC, VASA Provider, and SRA Documentation
 :hardbreaks:
 :nofooter:
 :icons: font
