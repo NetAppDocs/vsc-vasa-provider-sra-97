@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: editing, esxi, host, settings, for, vsc, vasa, provider, and, sra,
 summary: "You can use the dashboard of the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA) to editing your ESXi host settings."
 ---
-= Editing ESXi host settings for VSC, VASA Provider, and SRA
+= Edit ESXi host settings for VSC, VASA Provider, and SRA
 :experimental:
 :icons: font
 :imagesdir: ../media/

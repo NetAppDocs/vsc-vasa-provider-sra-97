@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configuring, virtual, storage, console, vmware, vsphere, storage, system, environment,
 summary: "Virtual Storage Console for VMware vSphere provides a single mechanism to discover storage systems and to set the storage credentials. The credentials provide the ONTAP permissions that are required to enable Virtual Storage Console (VSC) users to perform tasks by using the storage systems."
 ---
-= Configuring your Virtual Storage Console for VMware vSphere storage system environment
+= Configure your Virtual Storage Console for VMware vSphere storage system environment
 :experimental:
 :icons: font
 :imagesdir: ../media/

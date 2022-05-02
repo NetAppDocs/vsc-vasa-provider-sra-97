@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: provisioning, vvols, datastores,
 summary: "You can provision a vVols datastore using the Provision Datastore wizard only if VASA Provider is enabled in your virtual appliance for VSC, VASA Provider, and SRA."
 ---
-= Provisioning vVols datastores
+= Provision vVols datastores
 :experimental:
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: verifying, datastore, compliance, with, the, mapped, storage, capability, profile,
 summary: "You can quickly verify whether your datastores are compliant with the storage capability profiles that are mapped to the datastores."
 ---
-= Verifying datastore compliance with the mapped storage capability profile
+= Verify datastore compliance with the mapped storage capability profile
 :icons: font
 :imagesdir: ../media/
 

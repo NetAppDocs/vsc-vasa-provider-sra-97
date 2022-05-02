@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: mounting, datastore, on, additional, hosts,
 summary: "Mounting a datastore provides storage access to additional hosts. You can mount the datastore on the additional hosts after you add the hosts to your VMware environment."
 ---
-= Mounting datastore on additional hosts
+= Mount datastore on additional hosts
 :experimental:
 :icons: font
 :imagesdir: ../media/

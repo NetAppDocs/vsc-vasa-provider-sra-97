@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: enabling, vasa, provider, for, configuring, virtual, datastores,
 summary: "The virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA) has the VASA Provider capability enabled by default. You can configure VMware Virtual Volumes (vVols) datastores with required storage capability profiles for each vVols datastore."
 ---
-= Enabling VASA Provider for configuring virtual datastores
+= Enable VASA Provider for configuring virtual datastores
 :experimental:
 :icons: font
 :imagesdir: ../media/

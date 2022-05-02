@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configuring, alarm, thresholds,
 summary: "You can use VSC to set alarms to notify you when volume thresholds and aggregate thresholds reach the set limits."
 ---
-= Configuring alarm thresholds
+= Configure alarm thresholds
 :icons: font
 :imagesdir: ../media/
 

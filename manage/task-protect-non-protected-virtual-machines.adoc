@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: virtual, machines, configuring, protection, protecting, unprotected, virtual, machines,
 summary: "You can configure protection for your existing unprotected virtual machines that were created using VM storage Policy with replication disabled. To provide protection, you should change the VM storage policy and assign a replication group."
 ---
-= Protecting unprotected virtual machines
+= Protect unprotected virtual machines
 :experimental:
 :icons: font
 :imagesdir: ../media/

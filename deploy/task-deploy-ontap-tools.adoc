@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: deploying, the, virtual, appliance, for vsc, vasa, provider, and sra,
 summary: "You should deploy the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA) in your environment, and specify the required parameters, to be able to use the appliance."
 ---
-= Deploying the virtual appliance for VSC, VASA Provider, and SRA
+= Deploy the virtual appliance for VSC, VASA Provider, and SRA
 :experimental:
 :icons: font
 :imagesdir: ../media/

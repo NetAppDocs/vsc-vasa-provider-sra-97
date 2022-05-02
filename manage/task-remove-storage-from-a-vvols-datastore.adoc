@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: removing, storage, from, a, vvols, datastore,
 summary: "If a VMware Virtual Volumes (vVols) datastore has multiple FlexVol volumes, you can remove one or more of the FlexVol volumes from the vVols datastore without deleting the datastore."
 ---
-= Removing storage from a vVols datastore
+= Remove storage from a vVols datastore
 :experimental:
 :icons: font
 :imagesdir: ../media/

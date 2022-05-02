@@ -1,10 +1,10 @@
 ---
-permalink: deploy/concept-space-and-sizing-requirements-for-the-virtual-appliance-for-vsc-vasa-provider-and-sra.html
+permalink: deploy/concept-space-and-size-requirements-for-the-virtual-appliance-for-vsc-vasa-provider-and-sra.html
 sidebar: sidebar
 keywords: virtual, storage, console, storage, replication, adapter, space, sizing, requirements, virtual, appliance, vsc, vasa, provider, sra,
 summary: "Before deploying the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA), you should be familiar with the space requirements for the deployment package and some basic host system requirements."
 ---
-= Space and sizing requirements for the virtual appliance for VSC, VASA Provider, and SRA
+= Space and size requirements for the virtual appliance for VSC, VASA Provider, and SRA
 :icons: font
 :imagesdir: ../media/
 

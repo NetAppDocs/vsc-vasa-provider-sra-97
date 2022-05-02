@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: pairing, protected, recovery, sites,
 summary: "You must pair the protected and recovery sites created using your vSphere Client to enable Storage Replication Adapter (SRA) to discover the storage systems."
 ---
-= Pairing protected and recovery sites
+= Pair protected and recovery sites
 :experimental:
 :icons: font
 :imagesdir: ../media/

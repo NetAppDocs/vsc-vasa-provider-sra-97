@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configuring, resource, mappings,
 summary: "You must map your resources on the protected site and recovery site so that virtual machines are configured to fail over into one group of hosts or the other."
 ---
-= Configuring resource mappings
+= Configure resource mappings
 :experimental:
 :icons: font
 :imagesdir: ../media/

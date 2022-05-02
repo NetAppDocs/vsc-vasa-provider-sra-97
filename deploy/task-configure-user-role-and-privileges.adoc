@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: user, roles, configuring, user, roles, and, privileges,
 summary: "You can configure new user roles for managing storage systems using the JSON file provided with the virtual appliance for VSC, VASA Provider, and SRA and ONTAP System Manager."
 ---
-= Configuring user roles and privileges
+= Configure user roles and privileges
 :experimental:
 :icons: font
 :imagesdir: ../media/

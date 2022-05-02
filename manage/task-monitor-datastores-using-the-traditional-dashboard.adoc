@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: monitoring, datastores, virtual, machines, using, the, traditional, dashboard,
 summary: "You can monitor the traditional datastores and virtual machines using the traditional dashboard of the virtual appliance for Virtual Storage Console, VASA Provider, and Storage Replication Adapter. The dashboard data enables you to analyze the datastore usage and to take corrective action to prevent the virtual machines from running into space-related constraints."
 ---
-= Monitoring datastores and virtual machines using the traditional dashboard
+= Monitor datastores and virtual machines using the traditional dashboard
 :icons: font
 :imagesdir: ../media/
 

@@ -1,10 +1,10 @@
 ---
-permalink: manage/reference-thick-provisioning-fails-for-vvol-datastores-on-ontap-9-4.html
+permalink: manage/reference-thick-provision-fails-for-vvol-datastores-on-ontap-9-4.html
 sidebar: sidebar
 keywords: thick, provisioning, of, VVols, fails, for, ONTAP, 9.4, storage, systems,
 summary: "Thick provisioning of virtual volumes (VVols) fails when the VVol datastore does not contain thick-provisioned FlexVol volumes on an ONTAP 9.4 storage system."
 ---
-= Thick provisioning of VVols fails for ONTAP 9.4 storage systems
+= Thick provision of VVols fails for ONTAP 9.4 storage systems
 :icons: font
 :imagesdir: ../media/
 

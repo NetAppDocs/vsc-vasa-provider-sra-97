@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: collecting, the, log, files,
 summary: "You can collect log files for Virtual Storage Console for VMware vSphere from the option available in the VSC graphical user interface (GUI). Technical support might ask you to collect the log files to help troubleshoot a problem."
 ---
-= Collecting the log files
+= Collect the log files
 :experimental:
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: monitoring, vvols, datastores, virtual, machines, using, the, vVol, dashboard,
 summary: "You can monitor the performance and view the top five SAN VMware Virtual Volumes (vVols) datastores in your vCenter Server based on the parameters that you select by using the vVol dashboard of the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA)."
 ---
-= Monitoring vVols datastores and virtual machines using the vVol dashboard
+= Monitor vVols datastores and virtual machines using the vVol dashboard
 :icons: font
 :imagesdir: ../media/
 

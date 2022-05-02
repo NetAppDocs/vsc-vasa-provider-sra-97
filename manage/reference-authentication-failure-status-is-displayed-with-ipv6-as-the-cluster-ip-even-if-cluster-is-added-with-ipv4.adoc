@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: authentication, failure, for,, storage system, troubleshooting, error,
 summary: "Adding storage system with IPv4 results in authentication error with IPv6 status in storage system grid"
 ---
-= Adding storage system with IPv4 results in authentication error with IPv6 status in storage system grid
+= Add storage system with IPv4 results in authentication error with IPv6 status in storage system grid
 :icons: font
 :imagesdir: ../media/
 

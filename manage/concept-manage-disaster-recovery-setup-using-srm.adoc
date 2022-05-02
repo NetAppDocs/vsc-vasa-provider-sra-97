@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: managing, disaster, recovery, setup, by, using, site, recovery, manager,
 summary: "You can create and manage the disaster recovery setup in your vCenter Server by using Site Recovery Manager (SRM) along with VMware’s Site Recovery Manager (SRM)."
 ---
-= Managing disaster recovery setup by using Site Recovery Manager
+= Manage disaster recovery setup by using Site Recovery Manager
 :icons: font
 :imagesdir: ../media/
 

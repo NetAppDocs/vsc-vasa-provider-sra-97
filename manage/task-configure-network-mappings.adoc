@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configuring, network, mappings,
 summary: "You must map your networks on the protected site and the recovery site to enable communication between them."
 ---
-= Configuring network mappings
+= Configure network mappings
 :experimental:
 :icons: font
 :imagesdir: ../media/

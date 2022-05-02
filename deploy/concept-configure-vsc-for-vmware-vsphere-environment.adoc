@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configuring, your, virtual, storage, console, vmware, vsphere, environment,
 summary: "(VSC) supports numerous environments. Some of the features in these environments might require additional configuration."
 ---
-= Configuring your Virtual Storage Console for VMware vSphere environment
+= Configure your Virtual Storage Console for VMware vSphere environment
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: virtual, volume, datastores, adding, storage, to, a, vVols, datastore,
 summary: "You can increase the available storage by using the Add Storage wizard to add FlexVol volumes to an existing VMWare Virtual Volumes (vVols) datastore."
 ---
-= Adding storage to a vVols datastore
+= Add storage to a vVols datastore
 :experimental:
 :icons: font
 :imagesdir: ../media/

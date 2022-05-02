@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configuring, protection, groups,
 summary: "You must create protection groups to protect a group of virtual machines on the protected site."
 ---
-= Configuring protection groups
+= Configure protection groups
 :experimental:
 :icons: font
 :imagesdir: ../media/
