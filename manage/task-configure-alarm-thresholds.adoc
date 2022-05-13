@@ -13,7 +13,7 @@ You can use VSC to set alarms to notify you when volume thresholds and aggregate
 
 .Steps
 
-. From the Virtual Storage Console**Home** page, click *Settings*.
+. From the Virtual Storage Console *Home* page, click *Settings*.
 . Click *Unified Appliance Settings*.
 . Specify the percent values for the *Nearly full threshold (%)* field and the *Full threshold (%)* field for both the volume alarm thresholds and the aggregate alarm thresholds.
 +

@@ -29,7 +29,7 @@ You can expand the vVols datastore with FlexVol volumes that have pre-created st
 
 .Steps
 
-. On the vSphere Client**Home** page, click *Hosts and Clusters*.
+. On the vSphere Client *Home* page, click *Hosts and Clusters*.
 . Right-click the vVols datastore, and then select menu:NetApp VSC[Expand Storage of vVol Datastore].
 . On the *Expand Storage of vVol Datastore* page, you can either add an existing FlexVol volume to the vVols datastore, or create a new FlexVol volume to add to the database.
 +

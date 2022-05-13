@@ -26,7 +26,7 @@ The status of VASA Provider from the existing deployment is retained after the u
 
 [NOTE]
 ====
-A direct upgrade from any release prior to 9.7 to 9.7P2 or later is not supported by the virtual appliance for VSC, VASA Provider, and SRA.You should first upgrade your existing setup to the 9.7 release of the virtual appliance for VSC, VASA Provider, and SRA before upgrading to any later release. When you upgrade to 9.7.1 release of virtual appliance for VSC, VASA Provider, and SRA and you want to use vVols replication, then you will need to setup one more vCenter Server with virtual appliance with Site Recovery Manager (SRM) installed.
+A direct upgrade from any release prior to 9.7 to 9.7P2 or later is not supported by the virtual appliance for VSC, VASA Provider, and SRA. You should first upgrade your existing setup to the 9.7 release of the virtual appliance for VSC, VASA Provider, and SRA before upgrading to any later release. When you upgrade to 9.7.1 release of virtual appliance for VSC, VASA Provider, and SRA and you want to use vVols replication, then you will need to setup one more vCenter Server with virtual appliance with Site Recovery Manager (SRM) installed.
 ====
 
 .Steps

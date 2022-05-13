@@ -9,7 +9,7 @@ summary: "(VSC) supports numerous environments. Some of the features in these en
 :imagesdir: ../media/
 
 [.lead]
-(VSC) supports numerou environments. Some of the features in these environments might require additional configuration.
+(VSC) supports numerous environments. Some of the features in these environments might require additional configuration.
 
 You might have to perform some of the following tasks to configure your ESXi hosts, guest operating systems, and VSC:
 

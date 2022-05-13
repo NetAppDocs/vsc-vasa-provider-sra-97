@@ -41,7 +41,7 @@ For any SRA upgrade, the SRA software (the adapter on the Site Recovery Manager 
 
 If you have the VASA Provider deployment, then after the upgrade from existing setup, you must configure the memory size for your virtual appliance to be 12GB using the `Edit Settings` option. You must also modify the virtual memory reservation. The virtual machine must be powered off to modify the memory size.
 
-A direct upgrade from any release prior to 9.7 to 9.7P2 or later is not supported by the virtual appliance for VSC, VASA Provider, and SRA.You should first upgrade your existing setup to the 9.7 release of the virtual appliance for VSC, VASA Provider, and SRA before upgrading to any later release.
+A direct upgrade from any release prior to 9.7 to 9.7P2 or later is not supported by the virtual appliance for VSC, VASA Provider, and SRA. You should first upgrade your existing setup to the 9.7 release of the virtual appliance for VSC, VASA Provider, and SRA before upgrading to any later release.
 
 If you are going to deploy the latest release of the virtual appliance, you must see the topic "`Requirements for deploying the virtual appliance for VSC, VASA Provider, and SRA.`" The topic "`Upgrading to the 9.6 release of the virtual appliance for VSC, VASA Provider, and SRA`" has information on performing an in-place upgrade.
 

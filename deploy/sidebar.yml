@@ -24,7 +24,7 @@ entries:
       - title: Considerations and requirements for deploying the virtual appliance
           for VSC, VASA Provider, and SRA
         url: "/deploy/reference-considerations-for-deploying-virtual-appliance-for-vsc-vasa-provider-and-sra.html"
-    - title: Deploy or upgrad VSC, VASA Provider, and SRA
+    - title: Deploy or upgrade VSC, VASA Provider, and SRA
       url: "/deploy/concept-deploy-or-upgrade-ontap-tools.html"
       entries:
       - title: How to download the virtual appliance for VSC, VASA Provider, and SRA

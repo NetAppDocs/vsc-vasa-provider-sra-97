@@ -19,14 +19,14 @@ The following table presents an overview of what you should consider before you 
 a|
 First-time deployment of the virtual appliance for VSC, VASA Provider, and SRA
 a|
-The deployment of the virtual appliance for VSC, VASA Provider, and SRA automatically installs the VSC features.link:concept-deploy-or-upgrade-ontap-tools.html[Deploying or upgrading VSC, VASA Provider, and SRA^]
+The deployment of the virtual appliance for VSC, VASA Provider, and SRA automatically installs the VSC features. link:concept-deploy-or-upgrade-ontap-tools.html[Deploying or upgrading VSC, VASA Provider, and SRA^]
 
 link:concept-installation-workflow-for-new-users.html[Deployment workflow for new users of VSC, VASA Provider, and SRA virtual appliance^]
 
 a|
 Upgrading from an existing deployment of VSC
 a|
-The upgrade procedure from an existing deployment of VSC to the virtual appliance for VSC, VASA Provider, and SRA depends on the version of VSC, and whether you have deployed VSC, VASA Provider, and SRA. The deployment workflows and upgrade section has more information.link:concept-installation-workflow-for-existing-users-of-vsc.html[Deployment workflow for existing users of VSC, VASA Provider, and SRA^]
+The upgrade procedure from an existing deployment of VSC to the virtual appliance for VSC, VASA Provider, and SRA depends on the version of VSC, and whether you have deployed VSC, VASA Provider, and SRA. The deployment workflows and upgrade section has more information. link:concept-installation-workflow-for-existing-users-of-vsc.html[Deployment workflow for existing users of VSC, VASA Provider, and SRA^]
 
 Best practices before an upgrade:
 
@@ -41,7 +41,7 @@ VSC overwrites the standard roles with the current defaults each time you restar
 a|
 Regenerating an SSL certificate for VSC
 a|
-The SSL certificate is automatically generated when you deploy the virtual appliance for VSC, VASA Provider, and SRA. You might have to regenerate the SSL certificate to create a site-specific certificate.link:task-regenerating-an-ssl-certificate-for-vsc.html[Regenerating an SSL certificate for^]
+The SSL certificate is automatically generated when you deploy the virtual appliance for VSC, VASA Provider, and SRA. You might have to regenerate the SSL certificate to create a site-specific certificate. link:task-regenerating-an-ssl-certificate-for-vsc.html[Regenerating an SSL certificate for^]
 
 a|
 Setting ESXi server values

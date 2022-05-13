@@ -38,5 +38,5 @@ You can change the listing of the datastores based on the space utilized, IOPS, 
 +
 The *Virtual Machines* portlet provides the following details:
 
- ** Number of virtual machines using NetAppdatastores in your vCenter Server
+ ** Number of virtual machines using NetApp datastores in your vCenter Server
  ** Top five virtual machines based on committed capacity, latency, and uptime
