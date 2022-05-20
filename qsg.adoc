@@ -97,9 +97,9 @@ VMware vSphere, vCenter server, ESXi hosts, Site Recovery Manager (SRM), plug-in
 a|
 See the Interoperability Matrix Tool
 
-* https://imt.netapp.com/matrix/#welcome[Interoperability Matrix Tool: VSC 9.7.1^]
-* https://imt.netapp.com/matrix/#welcome[Interoperability Matrix Tool: VASA Provider 9.7.1^]
-* https://imt.netapp.com/matrix/#welcome[Interoperability Matrix Tool: SRA 9.7.1^]
+*  https://imt.netapp.com/matrix/imt.jsp?components=97563;&solution=56&isHWU&src=IMT[Interoperability Matrix Tool: VSC 9.7.1^]
+* https://imt.netapp.com/matrix/imt.jsp?components=97564;&solution=376&isHWU&src=IMT[Interoperability Matrix Tool: VASA Provider 9.7.1^]
+* https://imt.netapp.com/matrix/imt.jsp?components=97565;&solution=576&isHWU&src=IMT[Interoperability Matrix Tool: SRA 9.7.1^]
 |===
 
 === Virtual appliance for VSC, VASA Provider, and SRA requirements
