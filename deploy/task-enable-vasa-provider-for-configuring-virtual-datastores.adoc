@@ -1,35 +1,36 @@
 ---
 permalink: deploy/task-enable-vasa-provider-for-configuring-virtual-datastores.html
 sidebar: sidebar
-keywords: 
-summary: 'The virtual appliance for Virtual Storage Console \(VSC\), VASA Provider, and Storage Replication Adapter \(SRA\) has the VASA Provider capability enabled by default. You can configure VMware Virtual Volumes \(vVols\) datastores with required storage capability profiles for each vVols datastore.'
+keywords: enabling, vasa, provider, for, configuring, virtual, datastores,
+summary: "The virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA) has the VASA Provider capability enabled by default. You can configure VMware Virtual Volumes (vVols) datastores with required storage capability profiles for each vVols datastore."
 ---
-= *Enabling VASA Provider for configuring virtual datastores*
+= Enable VASA Provider for configuring virtual datastores
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 The virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA) has the VASA Provider capability enabled by default. You can configure VMware Virtual Volumes (vVols) datastores with required storage capability profiles for each vVols datastore.
 
-== Before you begin
+.Before you begin
 
 * You must have set up your vCenter Server instance and configured ESXi.
 * You must have deployed the virtual appliance for VSC, VASA Provider, and SRA.
 
-== About this task
+.About this task
 
 If the VASA Provider capability is disabled before upgrading to the 9.7.1 release of the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA), the VASA Provider capability remains disabled after the upgrade. This release allows you to enable vVols replication feature for vVols datastores.
 
-== Steps
+.Steps
 
 . Log in to the web user interface of VMware vSphere.
-. From the vSphere Client, click *Menu* > *Virtual Storage Console*.
+. From the vSphere Client, click menu:Menu[Virtual Storage Console].
 . Click *Settings*.
 . Click *Manage Capabilities* in the *Administrative Settings* tab.
 . In the *Manage Capabilities* dialog box, select the VASA Provider extension to enable.
 . If you want to use replication capability for vVols datastores, then use the *Enable vVols replication* toggle button.
 . Enter the IP address of the virtual appliance for VSC, VASA Provider, and SRA and the administrator password, and then click *Apply*.
 
-== After you finish
+.After you finish
 
 If you are using ONTAP 9.6 or earlier clusters, then you must register with VASA Provider to get details of vVols datastores and virtual machines used in the SAN vVols VM and SAN vVols datastore reports. But if you are using ONTAP 9.7 or later, then you do not need to register with VASA Provider.

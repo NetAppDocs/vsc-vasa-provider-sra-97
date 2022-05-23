@@ -1,17 +1,17 @@
 ---
 permalink: manage/task-migrate-existing-virtual-machines-to-7-1-virtual-appliance.html
 sidebar: sidebar
-keywords: 
-summary: 'If you are using the latest version of the virtual appliance for Virtual Storage Console \(VSC\), VASA Provider, and Storage Replication Adapter \(SRA\), then you should migrate your virtual machines that are provisioned with the “MaxThroughput MBPS” or “MaxThroughput IOPS” QoS metrics to new VVol datastores that are provisioned with the “Max IOPS” QoS metrics of the latest version of the virtual appliance for VSC, VASA Provider, and SRA.'
+keywords: migrating, virtual, machines, with, older, storage, capability, profiles,
+summary: "If you are using the latest version of the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA), then you should migrate your virtual machines that are provisioned with the “MaxThroughput MBPS” or “MaxThroughput IOPS” QoS metrics to new VVol datastores that are provisioned with the “Max IOPS” QoS metrics of the latest version of the virtual appliance for VSC, VASA Provider, and SRA."
 ---
-= Migrating virtual machines with older storage capability profiles
+= Migrate virtual machines with older storage capability profiles
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 If you are using the latest version of the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA), then you should migrate your virtual machines that are provisioned with the "`MaxThroughput MBPS`" or "`MaxThroughput IOPS`" QoS metrics to new VVol datastores that are provisioned with the "`Max IOPS`" QoS metrics of the latest version of the virtual appliance for VSC, VASA Provider, and SRA.
 
-== About this task
+.About this task
 
 With the latest version of the virtual appliance for VSC, VASA Provider, and SRA, you can configure QoS metrics for each virtual machine or virtual machine disk (VMDK). The QoS metrics were earlier applied at the ONTAP FlexVol volume level and were shared by all of the virtual machines or VMDKs that were provisioned on that FlexVol volume.
 
@@ -22,7 +22,7 @@ Starting with the 7.2 version of the virtual appliance for VSC, VASA Provider, a
 You must not modify the existing VM Storage Policy as the virtual machines might become non-compliant.
 ====
 
-== Steps
+.Steps
 
 . Create VVol datastores by using a new storage capability profile with the required "`Max IOPS`" value.
 . Create a VM Storage Policy, and then map the new VM Storage Policy with the new storage capability profile.

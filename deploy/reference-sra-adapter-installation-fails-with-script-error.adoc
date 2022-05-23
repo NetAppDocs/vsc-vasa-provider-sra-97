@@ -1,8 +1,8 @@
 ---
 permalink: deploy/reference-sra-adapter-installation-fails-with-script-error.html
 sidebar: sidebar
-keywords: Storage Replication Adapter
-summary: ''
+keywords: storage, replication, adapter, installation, fails, with, script, error,
+summary: "SRA installation fails with script error"
 ---
 = SRA installation fails with script error
 :icons: font
@@ -21,8 +21,8 @@ The error might occur because of different versions of Transport Layer Security 
 If you are trying to install SRA on Windows 2008 R2, then you must enable TLSv1.0 for the virtual appliance for VSC, VASA Provider, and SRA using the following steps in the maintenance console:
 
 . Login to the maintenance console using the "`maint`" user credentials.
-. From the main menu, select *1* for the Application configuration menu.
-. Enter *13* in the Application configuration menu to select Enable TLS Protocolfrom the Application Configuration menu.
+. From the main menu, select *1* for the *Application configuration* menu.
+. Enter *13* in the *Application configuration* menu to select *Enable TLS Protocol* from the *Application Configuration* menu.
 . Select *TLSv1* in the TLS protocol list.
 +
 VSC and VASA Provider services are restarted and TLSv1.0 is enabled.

@@ -1,8 +1,8 @@
 ---
 permalink: manage/reference-failover-in-progress-status-is-reported-inappropriately-for-sra.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: incorrect, status, failover, in, Progress, is, reported, for, SRA, in, SRM,
+summary: "Incorrect status 'Failover in Progress' is reported for SRA in SRM"
 ---
 = Incorrect status 'Failover in Progress' is reported for SRA in SRM
 :icons: font

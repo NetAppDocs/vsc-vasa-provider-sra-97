@@ -1,8 +1,8 @@
 ---
 permalink: deploy/reference-error-during-fresh-deployment-of-virtual-appliance-for-vsc-vasa-provider-and-sra.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: error, during, fresh, deployment, virtual, appliance, vsc, vasa, provider, sra,
+summary: "Error during fresh deployment of virtual appliance for VSC, VASA Provider, and SRA"
 ---
 = Error during fresh deployment of virtual appliance for VSC, VASA Provider, and SRA
 :icons: font

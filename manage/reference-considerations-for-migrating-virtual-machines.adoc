@@ -1,8 +1,8 @@
 ---
 permalink: manage/reference-considerations-for-migrating-virtual-machines.html
 sidebar: sidebar
-keywords: 
-summary: 'You should be aware of some of the considerations while migrating exisitng virtual machines in your datacenter.'
+keywords: considerations, for, migrating, or, cloning, virtual, machines,
+summary: "You should be aware of some of the considerations while migrating exisitng virtual machines in your datacenter."
 ---
 = Considerations for migrating or cloning virtual machines
 :icons: font

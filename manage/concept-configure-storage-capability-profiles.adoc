@@ -1,0 +1,12 @@
+---
+permalink: manage/concept-configure-storage-capability-profiles.html
+sidebar: sidebar
+keywords: creating, storage, capability, profiles, provider
+summary: "VASA Provider for ONTAP allows you to create storage capability profiles and map them to your storage. This helps you maintain consistency across the storage. You can also use VASA Provider to check for compliance between the storage and the storage capability profiles."
+---
+= Create storage capability profiles
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+VASA Provider for ONTAP allows you to create storage capability profiles and map them to your storage. This helps you maintain consistency across the storage. You can also use VASA Provider to check for compliance between the storage and the storage capability profiles.

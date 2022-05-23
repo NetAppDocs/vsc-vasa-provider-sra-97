@@ -1,8 +1,8 @@
 ---
 permalink: deploy/concept-guidelines-for-using-vsc-standard-roles.html
 sidebar: sidebar
-keywords: 
-summary: 'When you work with standard Virtual Storage Console for VMware vSphere roles, there are certain guidelines you should follow.'
+keywords: guidelines, using, VSC standard roles
+summary: "When you work with standard Virtual Storage Console for VMware vSphere roles, there are certain guidelines you should follow."
 ---
 = Guidelines for using VSC standard roles
 :icons: font

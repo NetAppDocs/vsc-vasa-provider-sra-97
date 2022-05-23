@@ -1,8 +1,8 @@
 ---
 permalink: manage/reference-datastore-inaccessible-when-volume-status-is-changed-to-offline.html
 sidebar: sidebar
-keywords: datastore inaccessible
-summary: ''
+keywords: datastore, inaccessible, when, volume, status, is, changed, to, offline,
+summary: "Datastore inaccessible when volume status is changed to offline"
 ---
 = Datastore inaccessible when volume status is changed to offline
 :icons: font

@@ -1,22 +1,23 @@
 ---
 permalink: manage/task-mount-a-vvol-datastore.html
 sidebar: sidebar
-keywords: Mount vVol
+keywords: Mount, vVol, datastore,
 summary: 'You can mount a VMware Virtual Volumes \(vVols\) datastore to one or more additional hosts by using the Mount vVol Datastore dialog box. Mounting the datastore provides storage access to additional hosts.'
 ---
-= Mounting a vVols datastore
+= Mount a vVols datastore
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 You can mount a VMware Virtual Volumes (vVols) datastore to one or more additional hosts by using the Mount vVol Datastore dialog box. Mounting the datastore provides storage access to additional hosts.
 
-== Steps
+.Steps
 
-. From the vSphere Client**Home** page, click *Hosts and Clusters*.
-. Right-click the datastore that you want to mount, and then select *NetApp VSC* > *Mount vVol Datastore*.
+. From the vSphere Client *Home* page, click *Hosts and Clusters*.
+. Right-click the datastore that you want to mount, and then select menu:NetApp VSC[Mount vVol Datastore].
 +
-The Mount vVol Datastore dialog box is displayed, which provides a list of the hosts that are available in the datacenter where you can mount the datastore. The list does not include the hosts on which the datastore has already been mounted, hosts that are running ESX 5.x or earlier, or hosts that do not support the datastore protocol. For example, if a host does not support the FC protocol, you cannot mount an FC datastore to the host.
+The *Mount vVol Datastore* dialog box is displayed, which provides a list of the hosts that are available in the datacenter where you can mount the datastore. The list does not include the hosts on which the datastore has already been mounted, hosts that are running ESX 5.x or earlier, or hosts that do not support the datastore protocol. For example, if a host does not support the FC protocol, you cannot mount an FC datastore to the host.
 +
 [NOTE]
 ====

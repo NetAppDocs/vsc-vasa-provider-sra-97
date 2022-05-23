@@ -1,8 +1,8 @@
 ---
 permalink: manage/concept-workflow-for-configuring-the-unified-appliance.html
 sidebar: sidebar
-keywords: 
-summary: 'Configuring the virtual machine for VSC, VASA Provider, and SRA involves configuring your storage systems, creating a storage capability profile, provisioning the datastore, and optionally configuring SRA for disaster recovery.'
+keywords: workflow, for, configuring, the, virtual, appliance, for, vsc, vasa, provider, and, sra,
+summary: "Configuring the virtual machine for VSC, VASA Provider, and SRA involves configuring your storage systems, creating a storage capability profile, provisioning the datastore, and optionally configuring SRA for disaster recovery."
 ---
 = Workflow for configuring the virtual appliance for VSC, VASA Provider, and SRA
 :icons: font

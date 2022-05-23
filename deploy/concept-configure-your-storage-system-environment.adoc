@@ -1,10 +1,11 @@
 ---
 permalink: deploy/concept-configure-your-storage-system-environment.html
 sidebar: sidebar
-keywords: 
-summary: 'Virtual Storage Console for VMware vSphere provides a single mechanism to discover storage systems and to set the storage credentials. The credentials provide the ONTAP permissions that are required to enable Virtual Storage Console \(VSC\) users to perform tasks by using the storage systems.'
+keywords: configuring, virtual, storage, console, vmware, vsphere, storage, system, environment,
+summary: "Virtual Storage Console for VMware vSphere provides a single mechanism to discover storage systems and to set the storage credentials. The credentials provide the ONTAP permissions that are required to enable Virtual Storage Console (VSC) users to perform tasks by using the storage systems."
 ---
-= Configuring your Virtual Storage Console for VMware vSphere storage system environment
+= Configure your Virtual Storage Console for VMware vSphere storage system environment
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
@@ -25,6 +26,6 @@ If your environment includes multiple vCenter Server instances, when you add a s
 Discovery happens in one of the following ways. In each case, you must supply credentials for any newly discovered storage system.
 
 * When the VSC service starts, VSC begins its automatic background discovery process.
-* You can click the *REDISCOVER All* button in the Storage Systems page, or on a host or datacenter to select it from the *Actions* menu (*Actions* > *Netapp VSC* > *Update Host and Storage Data*). You can also click *DISCOVER* on the Getting Started tab of Overview section.
+* You can click the *REDISCOVER All* button in the Storage Systems page, or on a host or datacenter to select it from the *Actions* menu (menu:Actions[Netapp VSC > Update Host and Storage Data]). You can also click *DISCOVER* on the Getting Started tab of Overview section.
 
 All of the VSC features require specific permissions to perform tasks. You can limit what users can do based on the credentials that are associated with the ONTAP role. All of the users that have the same storage system user name and password pair share the same set of storage system credentials and can perform the same operations.

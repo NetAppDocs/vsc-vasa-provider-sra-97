@@ -1,8 +1,8 @@
 ---
 permalink: deploy/concept-requirements-for-registering-vsc-in-multiple-vcenter-servers-environment.html
 sidebar: sidebar
-keywords: 
-summary: 'If you are using Virtual Storage Console for VMware vSphere in an environment where a single VMware vSphere HTML5 client. is managing multiple vCenter Server instances, you must register one instance of VSC with each vCenter Server so that there is a 1:1 pairing between VSC and the vCenter Server. Doing this enables you to manage all of the servers running vCenter 6.0 or later in both linked mode and non-linked mode from a single vSphere HTML5 client.'
+keywords: requirements, registering, vsc, multiple, vcenter, servers, environment,
+summary: "If you are using Virtual Storage Console for VMware vSphere in an environment where a single VMware vSphere HTML5 client. is managing multiple vCenter Server instances, you must register one instance of VSC with each vCenter Server so that there is a 1:1 pairing between VSC and the vCenter Server. Doing this enables you to manage all of the servers running vCenter 6.0 or later in both linked mode and non-linked mode from a single vSphere HTML5 client."
 ---
 = Requirements for registering VSC in multiple vCenter Servers environment
 :icons: font
@@ -34,7 +34,7 @@ You must also have the correct RBAC permissions.
 
 When you are performing a task that requires you to specify a vCenter Server, the *vCenter Server* drop-down box displays the available vCenter Servers in alphanumeric order. The default vCenter Server is always the first server in the drop-down list.
 
-If the location of the storage is known (for example, when you use the Provisioning wizard and the datastore is on a host managed by a specific vCenter Server), the vCenter Server list is displayed as a read-only option. This happens only when you use the right-click option to select an item in the vSphere Web Client.
+If the location of the storage is known (for example, when you use the *Provisioning* wizard and the datastore is on a host managed by a specific vCenter Server), the vCenter Server list is displayed as a read-only option. This happens only when you use the right-click option to select an item in the vSphere Web Client.
 
 VSC warns you when you attempt to select an object that it does not manage.
 

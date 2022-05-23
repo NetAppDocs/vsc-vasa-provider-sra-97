@@ -1,29 +1,31 @@
 ---
 permalink: manage/task-edit-esxi-host-settings.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use the dashboard of the virtual appliance for Virtual Storage Console \(VSC\), VASA Provider, and Storage Replication Adapter \(SRA\) to editing your ESXi host settings.'
+keywords: editing, esxi, host, settings, for, vsc, vasa, provider, and, sra,
+summary: "You can use the dashboard of the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA) to editing your ESXi host settings."
 ---
-= Editing ESXi host settings for VSC, VASA Provider, and SRA
+= Edit ESXi host settings for VSC, VASA Provider, and SRA
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 You can use the dashboard of the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA) to editing your ESXi host settings.
 
-== Before you begin
+.Before you begin
 
 You must have configured an ESXi host system for your vCenter Server instance.
 
-== About this task
+.About this task
 
 If there is an issue with your ESXi host settings, the issue is displayed in the ESXi Host Systems portlet of the dashboard. You can click the issue to view the host name or the IP address of the ESXi host that has the issue.
 
-== Steps
+.Steps
 
-. From the vSphere Client**Home** page, click *Virtual Storage Console*.
+. From the vSphere Client *Home* page, click *Virtual Storage Console*.
 . Edit the ESXi host settings.
 +
+[cols="1a,1a" options="header"]
 |===
 | If you want to edit the ESXi host settings from...| Do this...
 a|
@@ -32,15 +34,15 @@ a|
 
  .. Click the issue in the ESXi Host Systems portlet.
  .. Click the ESXi host names for which you want to modify the settings.
- .. Right-click the ESXi host name, and click *NetApp VSC* > *Set Recommended Values*.
+ .. Right-click the ESXi host name, and click menu:NetApp VSC[Set Recommended Values].
  .. Modify the required settings, and then click *OK*.
 
 a|
 vSphere Client home page
 a|
 
- .. Click *Menu* > *Hosts and Clusters*.
- .. Right-click the required ESXi host, and select *NetApp VSC* > *Set Recommended Value*.
+ .. Click menu:Menu[Hosts and Clusters].
+ .. Right-click the required ESXi host, and select menu:NetApp VSC[Set Recommended Value].
  .. Click *OK*.
 
 a|
@@ -53,5 +55,4 @@ a|
  .. Select the required settings in the Recommended host settings tab, and then click *Next*.
  .. Review your selection in the Summary tab, and then click *FINISH*.
 
-+
 |===

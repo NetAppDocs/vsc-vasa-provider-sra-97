@@ -1,8 +1,8 @@
 ---
 permalink: deploy/concept-ontap-role-based-access-control-feature-for-virtual-appliance.html
 sidebar: sidebar
-keywords: 
-summary: 'ONTAP role-based access control \(RBAC\) enables you to control access to specific storage systems and to control the actions that a user can perform on those storage systems. In Virtual Storage Console for VMware vSphere, ONTAP RBAC works with vCenter Server RBAC to determine which Virtual Storage Console \(VSC\) tasks a specific user can perform on the objects on a specific storage system.'
+keywords: ontap, role-based, access, control, virtual, appliance, vsc, vasa, provider, sra,
+summary: "ONTAP role-based access control (RBAC) enables you to control access to specific storage systems and to control the actions that a user can perform on those storage systems. In Virtual Storage Console for VMware vSphere, ONTAP RBAC works with vCenter Server RBAC to determine which Virtual Storage Console (VSC) tasks a specific user can perform on the objects on a specific storage system."
 ---
 = ONTAP role-based access control for the virtual appliance for VSC, VASA Provider, and SRA
 :icons: font

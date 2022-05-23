@@ -1,8 +1,8 @@
 ---
 permalink: deploy/reference-vsc-and-vasa-provider-services-restart-in-scaled-environments.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: vsc, and vasa, provider, services, restart, highly, scaled, environments,
+summary: "VSC and VASA Provider services restart in highly scaled environments"
 ---
 = VSC and VASA Provider services restart in highly scaled environments
 :icons: font

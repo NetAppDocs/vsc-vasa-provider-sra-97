@@ -1,8 +1,8 @@
 ---
 permalink: deploy/concept-installation-workflow-for-existing-users-of-vsc.html
 sidebar: sidebar
-keywords: 
-summary: 'The 9.7 releases of the virtual appliance for VSC, VASA Provider, and SRA support direct upgrade to the latest version.'
+keywords: deployment, workflow, existing, users, vsc, vasa, provider, sra,
+summary: "The 9.7 releases of the virtual appliance for VSC, VASA Provider, and SRA support direct upgrade to the latest version."
 ---
 = Deployment workflow for existing users of VSC, VASA Provider, and SRA
 :icons: font
@@ -18,11 +18,11 @@ The earlier releases of individual applications like VSC, VASA Provider, and SRA
 +
 The configuration data includes storage system credentials, as well as preferences found in the `kaminoprefs.xml` and `vscPreferences.xml` files.
 
-link:reference-configure-the-vsc-preferences-files.md#[Configuring the VSC preferences files]
+link:reference-configure-the-vsc-preferences-files.html[Configuring the VSC preferences files^]
 
 In many cases, you might not need to migrate configuration data. However, if you have customized the preferences files earlier, you might want to review them and make similar changes to the newly deployed virtual appliance. You can perform one of the following:
 
-* Use https://mysupport.netapp.com/tools/index.html[Import Utility for SnapCenter and Virtual Storage Console] to migrate storage system credentials from VSC 6.X and SRA 4.X to the new deployment.
+* Use https://mysupport.netapp.com/tools/index.html[Import Utility for SnapCenter and Virtual Storage Console^] to migrate storage system credentials from VSC 6.X and SRA 4.X to the new deployment.
 * Add the storage systems to the newly deployed virtual appliance and specify the credentials as you add them.
 
 If you are upgrading from VASA Provider 6.X, you should unregister VASA Provider before upgrading. See the documentation for your current release for more details.
@@ -31,7 +31,7 @@ If you are also upgrading from SRA 4.0 or earlier:
 
 * If you are using SRA 4.0P1, then you must first upgrade to SRA9.6 and only then you can perform an in-place upgrade of the SRA 9.6 to the latest release.
 +
-link:task-upgrading-to-the-9-7-1-virtual-appliance-for-vsc-vasa-provider-and-sra.md#[Upgrading to the 9.7.1 virtual appliance for VSC, VASA Provider, and SRA]
+link:task-upgrading-to-the-9-7-1-virtual-appliance-for-vsc-vasa-provider-and-sra.html[Upgrading to the 9.7.1 virtual appliance for VSC, VASA Provider, and SRA^]
 
 * If you are using SRA 2.1 or 3.0, you should first make note of existing site configuration details.
 +
@@ -41,14 +41,14 @@ For any SRA upgrade, the SRA software (the adapter on the Site Recovery Manager 
 
 If you have the VASA Provider deployment, then after the upgrade from existing setup, you must configure the memory size for your virtual appliance to be 12GB using the `Edit Settings` option. You must also modify the virtual memory reservation. The virtual machine must be powered off to modify the memory size.
 
-A direct upgrade from any release prior to 9.7 to 9.7P2 or later is not supported by the virtual appliance for VSC, VASA Provider, and SRA.You should first upgrade your existing setup to the 9.7 release of the virtual appliance for VSC, VASA Provider, and SRA before upgrading to any later release.
+A direct upgrade from any release prior to 9.7 to 9.7P2 or later is not supported by the virtual appliance for VSC, VASA Provider, and SRA. You should first upgrade your existing setup to the 9.7 release of the virtual appliance for VSC, VASA Provider, and SRA before upgrading to any later release.
 
 If you are going to deploy the latest release of the virtual appliance, you must see the topic "`Requirements for deploying the virtual appliance for VSC, VASA Provider, and SRA.`" The topic "`Upgrading to the 9.6 release of the virtual appliance for VSC, VASA Provider, and SRA`" has information on performing an in-place upgrade.
 
 *Related information*
 
-https://mysupport.netapp.com/tools/info/ECMLP2840096I.html?productID=62135&pcfContentID=ECMLP2840096[NetApp ToolChest: NetApp Import Utility for SnapCenter and Virtual Storage Console]
+https://mysupport.netapp.com/tools/info/ECMLP2840096I.html?productID=62135&pcfContentID=ECMLP2840096[NetApp ToolChest: NetApp Import Utility for SnapCenter and Virtual Storage Console^]
 
-link:concept-requirements-for-deploying-the-virtual-appliance-for-vsc-vasa-provider-and-sra.md#[Requirements for deploying the virtual appliance for VSC, VASA Provider, and SRA]
+link:concept-requirements-for-deploying-the-virtual-appliance-for-vsc-vasa-provider-and-sra.html[Requirements for deploying the virtual appliance for VSC, VASA Provider, and SRA^]
 
-link:task-upgrading-to-the-9-7-1-virtual-appliance-for-vsc-vasa-provider-and-sra.md#[Upgrading to the 9.7.1 virtual appliance for VSC, VASA Provider, and SRA]
+link:task-upgrading-to-the-9-7-1-virtual-appliance-for-vsc-vasa-provider-and-sra.html[Upgrading to the 9.7.1 virtual appliance for VSC, VASA Provider, and SRA^]

@@ -1,10 +1,11 @@
 ---
 permalink: manage/reference-error-deleting-a-datastore-after-network-settings-are-changed.html
 sidebar: sidebar
-keywords: delete datastore,troubleshooting errors
-summary: ''
+keywords: delete, datastore,troubleshooting errors
+summary: "Error deleting a datastore after network settings are changed"
 ---
 = Error deleting a datastore after network settings are changed
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
@@ -23,7 +24,7 @@ When IP address of the virtual appliance for VSC, VASA Provider, and SRA changes
 
 . Unregister VSC from vCenter Server.
 . Access `https://<vcenter_ip>/mob`.
-. Click *Content* > *Extension Manager* > *Unregister Extension* > *Unregister all com.netapp.* extensions*.
+. Click menu:Content[Extension Manager > Unregister Extension > Unregister all com.netapp.extensions].
 . Log in to the vCenter Server as root using putty.
 . Change to the vsphere-client-serenity directory using: `cd /etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity`.
 . Stop the vSphere Client: service using `vsphere-client stop`.

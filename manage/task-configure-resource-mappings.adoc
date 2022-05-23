@@ -1,30 +1,31 @@
 ---
 permalink: manage/task-configure-resource-mappings.html
 sidebar: sidebar
-keywords: 
-summary: 'You must map your resources on the protected site and recovery site so that virtual machines are configured to fail over into one group of hosts or the other.'
+keywords: configuring, resource, mappings,
+summary: "You must map your resources on the protected site and recovery site so that virtual machines are configured to fail over into one group of hosts or the other."
 ---
-= Configuring resource mappings
+= Configure resource mappings
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 You must map your resources on the protected site and recovery site so that virtual machines are configured to fail over into one group of hosts or the other.
 
-== Before you begin
+.Before you begin
 
 You must have connected the protected and recovery sites.
 
-== About this task
-
+.About this task
+++ ++
 [NOTE]
 ====
 In Site Recovery Manager (SRM), resources can be resource pools, ESXi hosts, or vSphere clusters.
 ====
 
-== Steps
+.Steps
 
-. Log in to your vCenter Server, and click on *Site Recovery* > *Sites*.
+. Log in to your vCenter Server, and click on menu:Site Recovery[Sites].
 . Select your protected site, and then click *Manage*.
 . In the Manage tab, select *Resource Mappings*.
 . Click the image:../media/new-resource-mappings.gif[] icon to create a new resource mapping.
@@ -37,6 +38,6 @@ The Create Resource Mapping wizard appears.
  .. Click *Next* after mappings are created successfully.
  .. Select the object that was used earlier to create reverse mapping, and then click *Finish*.
 
-== Results
+.Results
 
 The Resource Mappings page displays the protected site resources and the recovery site resources. You can follow the same steps for other networks in your environment.
