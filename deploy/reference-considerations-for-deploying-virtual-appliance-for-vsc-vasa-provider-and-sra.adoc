@@ -41,14 +41,14 @@ VSC overwrites the standard roles with the current defaults each time you restar
 a|
 Regenerating an SSL certificate for VSC
 a|
-The SSL certificate is automatically generated when you deploy the virtual appliance for VSC, VASA Provider, and SRA. You might have to regenerate the SSL certificate to create a site-specific certificate. link:task-regenerating-an-ssl-certificate-for-vsc.html[Regenerating an SSL certificate for^]
+The SSL certificate is automatically generated when you deploy the virtual appliance for VSC, VASA Provider, and SRA. You might have to regenerate the SSL certificate to create a site-specific certificate. link:task-regenerate-an-ssl-certificate-for-vsc.html[Regenerate an SSL certificate for^]
 
 a|
 Setting ESXi server values
 a|
 Although most of your ESXi server values are set by default, it is a good practice to check the values. These values are based on internal testing. Depending on your environment, you might have to change some of the values to improve performance.
 
-* link:task-configuring-esx-server-multipathing-and-timeout-settings.html[Configuring ESXi server multipathing and timeout settings^]
+* link:task-configure-esx-server-multipathing-and-timeout-settings.html[Configure ESXi server multipathing and timeout settings^]
 * link:reference-esx-host-values-set-by-vsc-for-vmware-vsphere.html[ESXi host values set using Virtual Storage Console for VMware vSphere^]
 
 a|

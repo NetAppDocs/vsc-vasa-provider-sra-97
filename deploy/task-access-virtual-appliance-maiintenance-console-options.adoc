@@ -96,4 +96,4 @@ The following options are available:
 
 *Related information*
 
-xref:concept-virtual-storage-console-and-vasa-provider-log-files.adoc[and VASA Provider log files]
+xref:concept-virtual-storage-console-and-vasa-provider-log-files.adoc[VSC and VASA Provider log files]

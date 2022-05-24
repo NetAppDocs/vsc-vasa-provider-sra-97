@@ -15,7 +15,7 @@ The steps involved in the migration of the disaster recovery are:
 
 . Upgrading your existing virtual appliance for VSC, VASA Provider, and SRA to the 9.7.1 release.
 +
-link:task-upgrading-to-the-9-7-1-virtual-appliance-for-vsc-vasa-provider-and-sra.html[Upgrading to the 9.7.1 virtual appliance for VSC, VASA Provider, and SRA^]
+link:task-upgrade-to-the-9-7-1-virtual-appliance-for-vsc-vasa-provider-and-sra.html[Upgrade to the 9.7.1 virtual appliance for VSC, VASA Provider, and SRA^]
 
 . Migrating Windows based Storage Replication Adapter to Appliance based SRA.
 . Migrating Windows SRM data to SRM Appliance.

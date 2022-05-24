@@ -146,7 +146,7 @@ entries:
       - title: Configure Storage Replication Adapter for SAN environment
         url: "/deploy/task-configure-storage-replication-adapter-for-san-environment.html"
       - title: Configure Storage Replication Adapter for NAS environment
-        url: "/deploy/task-configure-storage-replication-adapter-for-nas-environment.html"
+        url: "/deploy/reference-configure-storage-replication-adapter-for-nas-environment.html"
       - title: Configuration of Storage Replication Adapter for highly scaled environment
         url: "/deploy/reference-configure-storage-replication-adapter-for-highly-scaled-environment.html"
     - title: Troubleshoot issues with the virtual appliance for VSC, VASA Provider,
@@ -157,7 +157,7 @@ entries:
         url: "/deploy/task-clean-the-vsphere-cached-downloaded-plug-in-packages.html"
       - title: Uninstall does not remove standard VSC roles
         url: "/deploy/reference-uninstall-does-not-remove-standard-vsc-roles.html"
-      - title: and VASA Provider log files
+      - title: VSC and VASA Provider log files
         url: "/deploy/concept-virtual-storage-console-and-vasa-provider-log-files.html"
       - title: VSC and VASA Provider services restart in highly scaled environments
         url: "/deploy/reference-vsc-and-vasa-provider-services-restart-in-scaled-environments.html"

@@ -18,7 +18,7 @@ You can perform a direct upgrade to the 9.7.1 release of the virtual appliance f
 * You must have reserved at least 12 GB of RAM for the virtual appliance for VSC, VASA Provider, and SRA to work optimally after the upgrade.
 * You must clean the vSphere Client browser cache.
 +
-xref:task-cleaning-the-vsphere-cached-downloaded-plug-in-packages.adoc[Cleaning the vSphere cached downloaded plug-in packages]
+xref:task-clean-the-vsphere-cached-downloaded-plug-in-packages.adoc[Clean the vSphere cached downloaded plug-in packages]
 
 .About this task
 
@@ -59,4 +59,4 @@ It might take a few minutes for the plug-in to be updated in the vSphere Client.
 
 *Related information*
 
-xref:task-enable-vasa-provider-for-configuring-virtual-datastores.adoc[Enabling VASA Provider for configuring virtual datastores]
+xref:task-enable-vasa-provider-for-configuring-virtual-datastores.adoc[Enable VASA Provider for configuring virtual datastores]
