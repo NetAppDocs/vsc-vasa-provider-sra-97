@@ -13,4 +13,4 @@ You must download and deploy the virtual appliance for VSC, VASA Provider, and S
 
 *Related information*
 
-xref:task-enable-vasa-provider-for-configuring-virtual-datastores.adoc[Enabling VASA Provider for configuring virtual datastores]
+xref:task-enable-vasa-provider-for-configuring-virtual-datastores.adoc[Enable VASA Provider for configuring virtual datastores]

@@ -21,7 +21,7 @@ https://mysupport.netapp.com/site/[NetApp Support^]
 
 * You should be using ONTAP 9.3 or later for your storage system.
 
-link:reference-verifying-vvol-dashboard-data-requirements.html[vVol dashboard data requirements]
+link:reference-verify-vvol-dashboard-data-requirements.html[vVol dashboard data requirements]
 
 .About this task
 

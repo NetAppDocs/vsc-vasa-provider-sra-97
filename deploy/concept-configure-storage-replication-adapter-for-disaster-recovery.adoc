@@ -13,4 +13,4 @@ If you want to configure your vCenter Server for disaster recovery, you must ena
 
 *Related information*
 
-xref:task-enabling-storage-replication-adapter.adoc[Enabling Storage Replication Adapter]
+xref:task-enable-storage-replication-adapter.adoc[Enable Storage Replication Adapter]

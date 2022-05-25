@@ -25,7 +25,7 @@ You can use one of the following to create these roles:
 
 - ONTAP System Manager 9.7 or later
 
-link:task-configure-user-role-and-privileges.html[Configuring user roles and privileges^]
+link:task-configure-user-role-and-privileges.html[Configure user roles and privileges^]
 
 - RBAC User Creator for ONTAP tool (if using ONTAP 9.6 or earlier)
 
