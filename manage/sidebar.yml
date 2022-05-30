@@ -1,8 +1,6 @@
 section: manage
 title: Manage
 entries:
-    - title: Decide whether to use this guide
-      url: "/manage/concept-decide-whether-to-use-this-guide.html"
     - title: Workflow for configuring the virtual appliance for VSC, VASA Provider,
         and SRA
       url: "/manage/concept-workflow-for-configuring-the-unified-appliance.html"
