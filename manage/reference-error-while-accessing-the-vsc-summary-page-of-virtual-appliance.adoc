@@ -1,0 +1,20 @@
+---
+permalink: manage/reference-error-while-accessing-the-vsc-summary-page-of-virtual-appliance.html
+sidebar: sidebar
+keywords: error, while, accessing, the, vsc, summary, page, of, virtual, appliance,
+summary: "The error message /opt/netapp/vscserver/etc/vsc/performance.json (No such file or directory) might be displayed when you try to access the VSC Summary page after you deploy the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA)."
+---
+= Error while accessing the VSC Summary page of virtual appliance
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The error message `/opt/netapp/vscserver/etc/vsc/performance.json (No such file or directory)` might be displayed when you try to access the VSC Summary page after you deploy the virtual appliance for Virtual Storage Console (VSC), VASA Provider, and Storage Replication Adapter (SRA).
+
+== Description
+
+When you try to access the VSC dashboard after the deployment of the virtual appliance for VSC, VASA Provider, and SRA, you might encounter an error because the scheduler initialization process is not complete.
+
+== Workaround
+
+You must wait for a few seconds after the deployment of the virtual appliance for the performance scheduler initialization process to complete, and then click the image:../media/dashboard-refresh-icon.gif[] button to get the latest data.

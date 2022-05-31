@@ -1,0 +1,27 @@
+---
+permalink: manage/reference-file-creation-error-while-virtual-machine-provisioning-on-vvol-datastore-issue-we-are-unable-to-create-virtual-machine-using-the-default-vs0-svm-caus.html
+sidebar: sidebar
+keywords: error, provisioning, virtual, machine, troubleshooting, error,
+summary: "File creation error while provisioning virtual machines on VVol datastores"
+---
+= File creation error while provisioning virtual machines on VVol datastores
+:icons: font
+:imagesdir: ../media/
+
+== Issue
+
+Cannot create virtual machine using the default storage virtual machine (SVM) or any mixed storage virtual machine (SVM) that has both IPv6 and IPv4 data LIFS configured.
+
+== Cause
+
+The issue occurs because the default vs0 has both IPv6 and IPv4 data LIFs, and is not a purely IPv4 datastore.
+
+== Corrective action
+
+You can provision a virtual machine with vs0 using the following steps:
+
+. Use System Manager application to disable all the IPv6 LIFs .
+. Rediscover the cluster.
+. Provision a virtual machine on the VVol datastore on which the provisioning was failing.
++
+The virtual machine is successfully provisioned.
