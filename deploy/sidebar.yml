@@ -34,7 +34,7 @@ entries:
         entries:
         - title: Deployment customization considerations
           url: "/deploy/reference-deploment-customization-requirements.html"
-      - title: "<strong>Enable VASA Provider for configuring virtual datastores</strong>"
+      - title: "Enable VASA Provider for configuring virtual datastores"
         url: "/deploy/task-enable-vasa-provider-for-configuring-virtual-datastores.html"
         entries:
         - title: Register with the virtual appliance for VSC, VASA Provider, and
@@ -146,7 +146,7 @@ entries:
       - title: Configure Storage Replication Adapter for SAN environment
         url: "/deploy/task-configure-storage-replication-adapter-for-san-environment.html"
       - title: Configure Storage Replication Adapter for NAS environment
-        url: "/deploy/reference-configure-storage-replication-adapter-for-nas-environment.html"
+        url: "/deploy/task-configure-storage-replication-adapter-for-nas-environment.html"
       - title: Configuration of Storage Replication Adapter for highly scaled environment
         url: "/deploy/reference-configure-storage-replication-adapter-for-highly-scaled-environment.html"
     - title: Troubleshoot issues with the virtual appliance for VSC, VASA Provider,
