@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">English</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">English</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/vsc-vasa-provider-sra-97/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/vsc-vasa-provider-sra-97/manage/concept-workflow-for-configuring-the-unified-appliance.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/vsc-vasa-provider-sra-97/manage/concept-workflow-for-configuring-the-unified-appliance.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/vsc-vasa-provider-sra-97/manage/concept-workflow-for-configuring-the-unified-appliance.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/vsc-vasa-provider-sra-97/manage/concept-workflow-for-configuring-the-unified-appliance.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/vsc-vasa-provider-sra-97/manage/concept-workflow-for-configuring-the-unified-appliance.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/us-en/vsc-vasa-provider-sra-97/manage/concept-workflow-for-configuring-the-unified-appliance.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/vsc-vasa-provider-sra-97/manage/concept-workflow-for-configuring-the-unified-appliance.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/vsc-vasa-provider-sra-97/manage/concept-workflow-for-configuring-the-unified-appliance.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/vsc-vasa-provider-sra-97/manage/concept-workflow-for-configuring-the-unified-appliance.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/vsc-vasa-provider-sra-97/manage/concept-workflow-for-configuring-the-unified-appliance.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -498,11 +490,11 @@
           
           <a target="_blank" 
             
-              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/_strong_Enable_VASA_Provider_for_configuring_virtual_datastores__strong_.pdf" 
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Enable_VASA_Provider_for_configuring_virtual_datastores.pdf" 
             
           >
             <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf.png" width="16" height="16"/>
-            <strong>Enable VASA Provider for configuring virtual datastores</strong>
+            Enable VASA Provider for configuring virtual datastores
           </a>
           
 
@@ -1348,7 +1340,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/us-en/vsc-vasa-provider-sra-97/index.html">
         VSC, VASA Provider, and SRA docs
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/vsc-vasa-provider-sra-97/release-notes.html">
@@ -1387,7 +1379,7 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-deploment-customization-requirements.html">
         Deployment customization considerations
       </a></li></ul></li><li class="subfolders "><a href="/us-en/vsc-vasa-provider-sra-97/deploy/task-enable-vasa-provider-for-configuring-virtual-datastores.html">
-        <div class="na-navbar-padding"> <strong>Enable VASA Provider for configuring virtual datastores</strong></div>
+        <div class="na-navbar-padding"> Enable VASA Provider for configuring virtual datastores</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/us-en/vsc-vasa-provider-sra-97/deploy/task-register-oncommand-api-services-with-the-virtual-appliance-for-vsc-vasa-provider-and-sra.html">
         Register with the virtual appliance for VSC, VASA Provider, and SRA
@@ -1488,7 +1480,7 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/us-en/vsc-vasa-provider-sra-97/deploy/task-configure-storage-replication-adapter-for-san-environment.html">
         Configure Storage Replication Adapter for SAN environment
-      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-configure-storage-replication-adapter-for-nas-environment.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/vsc-vasa-provider-sra-97/deploy/task-configure-storage-replication-adapter-for-nas-environment.html">
         Configure Storage Replication Adapter for NAS environment
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-configure-storage-replication-adapter-for-highly-scaled-environment.html">
         Configuration of Storage Replication Adapter for highly scaled environment
@@ -1873,4 +1865,5 @@
     </script>
     <script src='/us-en/vsc-vasa-provider-sra-97/js/www-ntap.js'></script>
     <script src='/us-en/vsc-vasa-provider-sra-97/js/tabbed-blocks.js'></script>
+    <script src='/us-en/vsc-vasa-provider-sra-97/js/sidebar.js'></script>
   </body></html>
