@@ -10,9 +10,9 @@ sidebar:
     - title: VSC, VASA Provider, and SRA docs
       url: /index.html
     - title: Release notes
-      url: release-notes.html
+      url: /release-notes.html
     - title: Quick start
-      url: qsg.html
+      url: /qsg.html
     - section: deploy
     - section: manage
     - title: Legal notices
