@@ -34,6 +34,8 @@ homepage:
       links:
         - title: Documentation for earlier versions of VSC, VASA Provider, and SRA
           url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30048
+        - title: Documentation for ONTAP tools for VMware vSphere
+          url: https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html  
         - title: NetApp Knowledge Base - VSC, VASA Provider, and SRA
           url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/VSC_and_VASA_Provider
         - title: NetApp Import Utility - Video
