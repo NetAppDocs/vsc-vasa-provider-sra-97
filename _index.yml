@@ -1,0 +1,28 @@
+indexpage:
+  title: VSC, VASA Provider, and SRA Documentation
+  lead: "Virtual Storage Console for VSC, VASA Provider, and SRA enable you to configure, manage, and protect your virtual datastores in your vCenter Server environment."
+  summary: Documentation for Virtual Storage Console for VMware vSphere, VSC docs, VSC documentation.
+  keywords: vsc, vasa provider, sra, netapp, configuration, workflow, unified, appliance, deploy, upgrade, vmware, vsphere 
+  tiles:
+    - title: Get started
+      links:
+        - title: Release notes
+          url: /release-notes.html
+        - title: Quick start
+          url: /qsg.html
+        - title: Deploy and upgrade
+          url: /deploy/concept-virtual-storage-console-overview.html
+        - title: Manage
+          url: /manage/concept-workflow-for-configuring-the-unified-appliance.html
+    - title: More resources
+      links:
+        - title: Documentation for earlier versions of VSC, VASA Provider, and SRA
+          url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30048
+        - title: Documentation for ONTAP tools for VMware vSphere
+          url: https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html  
+        - title: NetApp Knowledge Base - VSC, VASA Provider, and SRA
+          url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/VSC_and_VASA_Provider
+        - title: NetApp Import Utility - Video
+          url: https://www.youtube.com/watch?v=CEQmIEzNVfA
+        - title: NetApp Community - VSC, VASA Provider, and SRA
+          url: https://community.netapp.com/t5/VMware-Solutions-Discussions/bd-p/vmware-solutions-discussions
