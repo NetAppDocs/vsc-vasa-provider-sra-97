@@ -1,0 +1,3116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="at-element-marker">
+  <title>Set timeout values for Solaris guest operating systems</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Set timeout values for Solaris guest operating systems" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" />
+	<meta property="og:description" content="The guest operating system (OS) timeout scripts set the SCSI I/O timeout settings for Solaris 10. You can specify either a 60-second timeout or a 190-second ..." />
+  <meta property="og:image" content="https://docs.netapp.com/us-en/vsc-vasa-provider-sra-97/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="The guest operating system (OS) timeout scripts set the SCSI I/O timeout settings for Solaris 10. You can specify either a 60-second timeout or a 190-second ...">
+  <meta name="keywords" content=" setting, timeout, values, solaris, guest, operating, systems,"><!-- Icons -->
+  <link rel="icon" href="/us-en/vsc-vasa-provider-sra-97/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/us-en/vsc-vasa-provider-sra-97/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/us-en/vsc-vasa-provider-sra-97/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/us-en/vsc-vasa-provider-sra-97/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/us-en/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/vsc-vasa-provider-sra-97/js/na-search.js'></script><script src='/us-en/vsc-vasa-provider-sra-97/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/us-en/vsc-vasa-provider-sra-97/js/custom-dropdown.js'></script>
+  <script src='/us-en/vsc-vasa-provider-sra-97/js/FileSaver.min.js'></script>
+  <script src='/us-en/vsc-vasa-provider-sra-97/js/jszip-utils.min.js'></script>
+  <script src='/us-en/vsc-vasa-provider-sra-97/js/jszip.min.js'></script><script src='/us-en/vsc-vasa-provider-sra-97/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/us-en/vsc-vasa-provider-sra-97/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/">
+                <image id="ie-header-logo" src="/us-en/vsc-vasa-provider-sra-97/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">Docs</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/us-en/vsc-vasa-provider-sra-97/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">English</span>
+                    <img src="/us-en/vsc-vasa-provider-sra-97/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/us-en/vsc-vasa-provider-sra-97/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/us-en/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/us-en/vsc-vasa-provider-sra-97/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">All NetApp</span>
+                    <img src="/us-en/vsc-vasa-provider-sra-97/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/us-en/vsc-vasa-provider-sra-97/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">Support</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">Knowledge Base</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">Training</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/us-en/vsc-vasa-provider-sra-97/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">All docs</a>
+    </li>
+    
+    
+
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/us-en/vsc-vasa-provider-sra-97/">-->
+      VSC, VASA Provider, and SRA 9.7
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/us-en/vsc-vasa-provider-sra-97/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/us-en/vsc-vasa-provider-sra-97/search.html" 
+        data-type="widget"
+        data-placeholder="Search documentation"
+        data-no-results-found="No results were found for {query}"
+        data-did-you-mean="Search for {suggestion}."
+        data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?"
+        data-results-found="{hitCount} results found"
+        data-error-message="An error occurred. Please try again."
+        data-error-reset="Reset search"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VSC, VASA Provider, and SRA docs"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/vsc-vasa-provider-sra-97/index.html">
+        VSC, VASA Provider, and SRA docs
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Release notes"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/release-notes.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/vsc-vasa-provider-sra-97/release-notes.html">
+        Release notes
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Quick start"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/qsg.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/vsc-vasa-provider-sra-97/qsg.html">
+        Quick start
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Deploy and upgrade"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Deploy and upgrade</div>-->
+         Deploy and upgrade
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Overview of the virtual appliance for VSC, VASA Provider, and SRA"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-virtual-storage-console-overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-virtual-storage-console-overview.html">
+        Overview of the virtual appliance for VSC, VASA Provider, and SRA
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Deployment workflow for new users of VSC, VASA Provider, and SRA virtual appliance"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-installation-workflow-for-new-users.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-installation-workflow-for-new-users.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Deployment workflow for new users of VSC, VASA Provider, and SRA virtual appliance</div>-->
+         Deployment workflow for new users of VSC, VASA Provider, and SRA virtual appliance
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Deployment workflow for existing users of VSC, VASA Provider, and SRA"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-installation-workflow-for-existing-users-of-vsc.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-installation-workflow-for-existing-users-of-vsc.html">
+        Deployment workflow for existing users of VSC, VASA Provider, and SRA
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Requirements for deploying the virtual appliance for VSC, VASA Provider, and SRA"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-requirements-for-deploying-the-virtual-appliance-for-vsc-vasa-provider-and-sra.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-requirements-for-deploying-the-virtual-appliance-for-vsc-vasa-provider-and-sra.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Requirements for deploying the virtual appliance for VSC, VASA Provider, and SRA</div>-->
+         Requirements for deploying the virtual appliance for VSC, VASA Provider, and SRA
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Port requirements for VSC"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/reference-port-requirements-for-vsc.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-port-requirements-for-vsc.html">
+        Port requirements for VSC
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Space and size requirements for the virtual appliance for VSC, VASA Provider, and SRA"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-space-and-size-requirements-for-the-virtual-appliance-for-vsc-vasa-provider-and-sra.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-space-and-size-requirements-for-the-virtual-appliance-for-vsc-vasa-provider-and-sra.html">
+        Space and size requirements for the virtual appliance for VSC, VASA Provider, and SRA
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Supported storage system, licensing, and applications for the virtual appliance for VSC, VASA Provider, and SRA"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-supported-storage-system-and-applications.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-supported-storage-system-and-applications.html">
+        Supported storage system, licensing, and applications for the virtual appliance for VSC, VASA Provider, and SRA
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Considerations and requirements for deploying the virtual appliance for VSC, VASA Provider, and SRA"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/reference-considerations-for-deploying-virtual-appliance-for-vsc-vasa-provider-and-sra.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-considerations-for-deploying-virtual-appliance-for-vsc-vasa-provider-and-sra.html">
+        Considerations and requirements for deploying the virtual appliance for VSC, VASA Provider, and SRA
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Deploy or upgrade VSC, VASA Provider, and SRA"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-deploy-or-upgrade-ontap-tools.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-deploy-or-upgrade-ontap-tools.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Deploy or upgrade VSC, VASA Provider, and SRA</div>-->
+         Deploy or upgrade VSC, VASA Provider, and SRA
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="How to download the virtual appliance for VSC, VASA Provider, and SRA"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-how-to-download-the-virtual-appliance-for-vsc-vp-and-sra.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-how-to-download-the-virtual-appliance-for-vsc-vp-and-sra.html">
+        How to download the virtual appliance for VSC, VASA Provider, and SRA
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Deploy the virtual appliance for VSC, VASA Provider, and SRA"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-deploy-ontap-tools.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-deploy-ontap-tools.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Deploy the virtual appliance for VSC, VASA Provider, and SRA</div>-->
+         Deploy the virtual appliance for VSC, VASA Provider, and SRA
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Deployment customization considerations"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/reference-deploment-customization-requirements.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-deploment-customization-requirements.html">
+        Deployment customization considerations
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Enable VASA Provider for configuring virtual datastores"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-enable-vasa-provider-for-configuring-virtual-datastores.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-enable-vasa-provider-for-configuring-virtual-datastores.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Enable VASA Provider for configuring virtual datastores</div>-->
+         Enable VASA Provider for configuring virtual datastores
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Register with the virtual appliance for VSC, VASA Provider, and SRA"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-register-oncommand-api-services-with-the-virtual-appliance-for-vsc-vasa-provider-and-sra.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-register-oncommand-api-services-with-the-virtual-appliance-for-vsc-vasa-provider-and-sra.html">
+        Register with the virtual appliance for VSC, VASA Provider, and SRA
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Install the NFS VAAI plug-in"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-install-the-nfs-vaai-plug-in.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-install-the-nfs-vaai-plug-in.html">
+        Install the NFS VAAI plug-in
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Enable Storage Replication Adapter"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-enable-storage-replication-adapter.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-enable-storage-replication-adapter.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Enable Storage Replication Adapter</div>-->
+         Enable Storage Replication Adapter
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure SRA on the SRM Appliance"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-configure-sra-on-srm-appliance.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-configure-sra-on-srm-appliance.html">
+        Configure SRA on the SRM Appliance
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Update Storage Replication Adapter (SRA) credentials"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-update-sra-credentials.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-update-sra-credentials.html">
+        Update Storage Replication Adapter (SRA) credentials
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Migration of Windows SRM to SRM Appliance"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-migration-of-disaster-recovery-setup-from-windows-to-appliance.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-migration-of-disaster-recovery-setup-from-windows-to-appliance.html">
+        Migration of Windows SRM to SRM Appliance
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Upgrade to the 9.7.1 virtual appliance for VSC, VASA Provider, and SRA"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-upgrade-to-the-9-7-1-virtual-appliance-for-vsc-vasa-provider-and-sra.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-upgrade-to-the-9-7-1-virtual-appliance-for-vsc-vasa-provider-and-sra.html">
+        Upgrade to the 9.7.1 virtual appliance for VSC, VASA Provider, and SRA
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Upgrade Storage Replication Adapter"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-upgrade-storage-replication-adapter.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-upgrade-storage-replication-adapter.html">
+        Upgrade Storage Replication Adapter
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure your Virtual Storage Console for VMware vSphere environment"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-configure-vsc-for-vmware-vsphere-environment.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-configure-vsc-for-vmware-vsphere-environment.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure your Virtual Storage Console for VMware vSphere environment</div>-->
+         Configure your Virtual Storage Console for VMware vSphere environment
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure ESXi server multipathing and timeout settings"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-configure-esx-server-multipathing-and-timeout-settings.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-configure-esx-server-multipathing-and-timeout-settings.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure ESXi server multipathing and timeout settings</div>-->
+         Configure ESXi server multipathing and timeout settings
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ESXi host values set using Virtual Storage Console for VMware vSphere"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/reference-esx-host-values-set-by-vsc-for-vmware-vsphere.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-esx-host-values-set-by-vsc-for-vmware-vsphere.html">
+        ESXi host values set using Virtual Storage Console for VMware vSphere
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="configure guest operating system scripts"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/reference-configure-guest-operating-system-scripts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-configure-guest-operating-system-scripts.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> configure guest operating system scripts</div>-->
+         configure guest operating system scripts
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Set timeout values for Windows guest operating systems"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-run-the-gos-timeout-scripts-for-windows.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-windows.html">
+        Set timeout values for Windows guest operating systems
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Set timeout values for Solaris guest operating systems"
+      data-li-level="5#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html">
+        Set timeout values for Solaris guest operating systems
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Set timeout values for Linux guest operating systems"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-run-the-gos-timeout-scripts-for-rhel4-or-sles9.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-rhel4-or-sles9.html">
+        Set timeout values for Linux guest operating systems
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Regenerate an SSL certificate for"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-regenerate-an-ssl-certificate-for-vsc.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-regenerate-an-ssl-certificate-for-vsc.html">
+        Regenerate an SSL certificate for
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Requirements for register VSC in multiple vCenter Servers environment"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-requirements-for-registering-vsc-in-multiple-vcenter-servers-environment.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-requirements-for-registering-vsc-in-multiple-vcenter-servers-environment.html">
+        Requirements for register VSC in multiple vCenter Servers environment
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure the VSC preferences files"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/reference-configure-the-vsc-preferences-files.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-configure-the-vsc-preferences-files.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure the VSC preferences files</div>-->
+         Configure the VSC preferences files
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Set IPv4 or IPv6"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/reference-set-ipv4-or-ipv6.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-set-ipv4-or-ipv6.html">
+        Set IPv4 or IPv6
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Enable datastore mounting across different subnets"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-enable-datastore-mounting-across-different-subnets.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-enable-datastore-mounting-across-different-subnets.html">
+        Enable datastore mounting across different subnets
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Access the maintenance console options of the virtual appliance for VSC, VASA Provider, and SRA"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-access-virtual-appliance-maiintenance-console-options.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-access-virtual-appliance-maiintenance-console-options.html">
+        Access the maintenance console options of the virtual appliance for VSC, VASA Provider, and SRA
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Change the administrator password"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-change-the-administrative-password.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-change-the-administrative-password.html">
+        Change the administrator password
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure high availability for the virtual appliance for VSC, VASA Provider, and SRA"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-configure-high-availability-for-virtual-appliance-for-vsc-vasa-provider-and-sra.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-configure-high-availability-for-virtual-appliance-for-vsc-vasa-provider-and-sra.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure high availability for the virtual appliance for VSC, VASA Provider, and SRA</div>-->
+         Configure high availability for the virtual appliance for VSC, VASA Provider, and SRA
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VMware vSphere HA"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-vmware-high-availability-for-vcenter-server.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-vmware-high-availability-for-vcenter-server.html">
+        VMware vSphere HA
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VMware vSphere Fault Tolerance"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-vmware-fault-tolerance-for-vcenter-server.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-vmware-fault-tolerance-for-vcenter-server.html">
+        VMware vSphere Fault Tolerance
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="MetroCluster configurations supported by the virtual appliance for VSC, VASA Provider, and SRA"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/reference-metrocluster-configurations-supported-by-virtual-appliance-for-vsc-vasa-provider-and-sra.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-metrocluster-configurations-supported-by-virtual-appliance-for-vsc-vasa-provider-and-sra.html">
+        MetroCluster configurations supported by the virtual appliance for VSC, VASA Provider, and SRA
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure your Virtual Storage Console for VMware vSphere storage system environment"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-configure-your-storage-system-environment.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-configure-your-storage-system-environment.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure your Virtual Storage Console for VMware vSphere storage system environment</div>-->
+         Configure your Virtual Storage Console for VMware vSphere storage system environment
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Set default credentials for storage systems"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-set-default-credentials-for-storage-systems.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-set-default-credentials-for-storage-systems.html">
+        Set default credentials for storage systems
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Add storage systems to VSC"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-add-storage-systems.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-add-storage-systems.html">
+        Add storage systems to VSC
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Discover storage systems and hosts"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-discover-storage-systems-and-hosts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-discover-storage-systems-and-hosts.html">
+        Discover storage systems and hosts
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Refresh the storage system display"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-refresh-the-storage-system-display.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-refresh-the-storage-system-display.html">
+        Refresh the storage system display
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="vCenter Server role-based access control features in VSC for VMware vSphere"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-vcenter-server-role-based-access-control-features-in-vsc-for-vmware-vsphere.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-vcenter-server-role-based-access-control-features-in-vsc-for-vmware-vsphere.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> vCenter Server role-based access control features in VSC for VMware vSphere</div>-->
+         vCenter Server role-based access control features in VSC for VMware vSphere
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Components of vCenter Server permissions"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/reference-components-that-make-up-vcenter-server-permissions.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-components-that-make-up-vcenter-server-permissions.html">
+        Components of vCenter Server permissions
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Key points about assigning and modifying permissions for vCenter Server"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/reference-key-points-about-assigning-and-modifying-permissions.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-key-points-about-assigning-and-modifying-permissions.html">
+        Key points about assigning and modifying permissions for vCenter Server
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Standard roles packaged with the virtual appliance for VSC, VASA Provider, and SRA"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-standard-roles-packaged-with-virtual-appliance-for-vsc-vp-and-sra.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-standard-roles-packaged-with-virtual-appliance-for-vsc-vp-and-sra.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Standard roles packaged with the virtual appliance for VSC, VASA Provider, and SRA</div>-->
+         Standard roles packaged with the virtual appliance for VSC, VASA Provider, and SRA
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Guidelines for using VSC standard roles"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-guidelines-for-using-vsc-standard-roles.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-guidelines-for-using-vsc-standard-roles.html">
+        Guidelines for using VSC standard roles
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Privileges required for VSC tasks"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-privileges-required-for-vsc-tasks.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-privileges-required-for-vsc-tasks.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Privileges required for VSC tasks</div>-->
+         Privileges required for VSC tasks
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Product-level privilege required by VSC for VMware vSphere"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/reference-product-level-privilege-required-by-vsc-for-vmware-vsphere.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-product-level-privilege-required-by-vsc-for-vmware-vsphere.html">
+        Product-level privilege required by VSC for VMware vSphere
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ONTAP role-based access control for the virtual appliance for VSC, VASA Provider, and SRA"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-ontap-role-based-access-control-feature-for-virtual-appliance.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-ontap-role-based-access-control-feature-for-virtual-appliance.html">
+        ONTAP role-based access control for the virtual appliance for VSC, VASA Provider, and SRA
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Recommended ONTAP roles when using VSC for VMware vSphere"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-recommended-ontap-roles-when-using-vsc-for-vmware-vsphere.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-recommended-ontap-roles-when-using-vsc-for-vmware-vsphere.html">
+        Recommended ONTAP roles when using VSC for VMware vSphere
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="How to configure ONTAP role-based access control for VSC for VMware vSphere"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-how-to-configure-data-ontap-role-based-access-control-for-vsc-for-vmware-vsphere.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-how-to-configure-data-ontap-role-based-access-control-for-vsc-for-vmware-vsphere.html">
+        How to configure ONTAP role-based access control for VSC for VMware vSphere
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure user roles and privileges"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-configure-user-role-and-privileges.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-configure-user-role-and-privileges.html">
+        Configure user roles and privileges
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure Storage Replication Adapter for disaster recovery"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-configure-storage-replication-adapter-for-disaster-recovery.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-configure-storage-replication-adapter-for-disaster-recovery.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure Storage Replication Adapter for disaster recovery</div>-->
+         Configure Storage Replication Adapter for disaster recovery
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure Storage Replication Adapter for SAN environment"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-configure-storage-replication-adapter-for-san-environment.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-configure-storage-replication-adapter-for-san-environment.html">
+        Configure Storage Replication Adapter for SAN environment
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure Storage Replication Adapter for NAS environment"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-configure-storage-replication-adapter-for-nas-environment.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-configure-storage-replication-adapter-for-nas-environment.html">
+        Configure Storage Replication Adapter for NAS environment
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configuration of Storage Replication Adapter for highly scaled environment"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/reference-configure-storage-replication-adapter-for-highly-scaled-environment.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-configure-storage-replication-adapter-for-highly-scaled-environment.html">
+        Configuration of Storage Replication Adapter for highly scaled environment
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Troubleshoot issues with the virtual appliance for VSC, VASA Provider, and SRA"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-troubleshoot-issues-with-the-virtual-appliance-for-vsc-vasa-provider-and-sra.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-troubleshoot-issues-with-the-virtual-appliance-for-vsc-vasa-provider-and-sra.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Troubleshoot issues with the virtual appliance for VSC, VASA Provider, and SRA</div>-->
+         Troubleshoot issues with the virtual appliance for VSC, VASA Provider, and SRA
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Clean the vSphere cached downloaded plug-in packages"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-clean-the-vsphere-cached-downloaded-plug-in-packages.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-clean-the-vsphere-cached-downloaded-plug-in-packages.html">
+        Clean the vSphere cached downloaded plug-in packages
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Uninstall does not remove standard VSC roles"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/reference-uninstall-does-not-remove-standard-vsc-roles.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-uninstall-does-not-remove-standard-vsc-roles.html">
+        Uninstall does not remove standard VSC roles
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VSC and VASA Provider log files"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/concept-virtual-storage-console-and-vasa-provider-log-files.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/concept-virtual-storage-console-and-vasa-provider-log-files.html">
+        VSC and VASA Provider log files
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VSC and VASA Provider services restart in highly scaled environments"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/reference-vsc-and-vasa-provider-services-restart-in-scaled-environments.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-vsc-and-vasa-provider-services-restart-in-scaled-environments.html">
+        VSC and VASA Provider services restart in highly scaled environments
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure VASA Provider to work with SSH"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-configure-vasa-provider-to-work-with-ssh.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-configure-vasa-provider-to-work-with-ssh.html">
+        Configure VASA Provider to work with SSH
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure the virtual appliance for VSC, VASA Provider, and SRA to use SSH for remote diag access"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/task-configure-vasa-provider-to-use-ssh-for-remote-diag-access.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/task-configure-vasa-provider-to-use-ssh-for-remote-diag-access.html">
+        Configure the virtual appliance for VSC, VASA Provider, and SRA to use SSH for remote diag access
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SRA installation fails with script error"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/reference-sra-adapter-installation-fails-with-script-error.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-sra-adapter-installation-fails-with-script-error.html">
+        SRA installation fails with script error
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SRA fails to perform optimally in a highly scaled environment"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/reference-sra-fails-to-perform-optimally-in-a-highly-scaled-environment.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-sra-fails-to-perform-optimally-in-a-highly-scaled-environment.html">
+        SRA fails to perform optimally in a highly scaled environment
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Unable to install the SRA plug-in"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/reference-unable-to-install-sra-plug-in-due-to-winhttp-proxy-settings.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-unable-to-install-sra-plug-in-due-to-winhttp-proxy-settings.html">
+        Unable to install the SRA plug-in
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp Storage Replication Adapter for ONTAP does not appear on the Site Recovery Manager Appliance"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/reference-srm-does-not-work-after-sra-installation.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-srm-does-not-work-after-sra-installation.html">
+        NetApp Storage Replication Adapter for ONTAP does not appear on the Site Recovery Manager Appliance
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Error during fresh deployment of virtual appliance for VSC, VASA Provider, and SRA"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/deploy/reference-error-during-fresh-deployment-of-virtual-appliance-for-vsc-vasa-provider-and-sra.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/deploy/reference-error-during-fresh-deployment-of-virtual-appliance-for-vsc-vasa-provider-and-sra.html">
+        Error during fresh deployment of virtual appliance for VSC, VASA Provider, and SRA
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Manage</div>-->
+         Manage
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Workflow for configuring the virtual appliance for VSC, VASA Provider, and SRA"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/concept-workflow-for-configuring-the-unified-appliance.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/vsc-vasa-provider-sra-97/manage/concept-workflow-for-configuring-the-unified-appliance.html">
+        Workflow for configuring the virtual appliance for VSC, VASA Provider, and SRA
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure storage systems for VSC, VASA Provider, and SRA"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/concept-configure-storage-systems-for-vsc-vasa-provider-and-sra.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/vsc-vasa-provider-sra-97/manage/concept-configure-storage-systems-for-vsc-vasa-provider-and-sra.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure storage systems for VSC, VASA Provider, and SRA</div>-->
+         Configure storage systems for VSC, VASA Provider, and SRA
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Add storage systems to VSC"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-add-storage-systems.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-add-storage-systems.html">
+        Add storage systems to VSC
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Set default credentials for storage systems"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-set-default-credentials-for-storage-systems.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-set-default-credentials-for-storage-systems.html">
+        Set default credentials for storage systems
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure alarm thresholds"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-configure-alarm-thresholds.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-configure-alarm-thresholds.html">
+        Configure alarm thresholds
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Create storage capability profiles"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/concept-configure-storage-capability-profiles.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/vsc-vasa-provider-sra-97/manage/concept-configure-storage-capability-profiles.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Create storage capability profiles</div>-->
+         Create storage capability profiles
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="What storage capabilities are"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/concept-what-storage-capabilities-are.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/concept-what-storage-capabilities-are.html">
+        What storage capabilities are
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Considerations for creating and editing storage capability profiles"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/concept-considerations-for-creating-and-editing-storage-capability-profiles.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/concept-considerations-for-creating-and-editing-storage-capability-profiles.html">
+        Considerations for creating and editing storage capability profiles
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure storage capability profiles"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-create-storage-capability-profiles.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-create-storage-capability-profiles.html">
+        Configure storage capability profiles
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure traditional datastores and virtual machines"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/concept-configure-traditional-datastores.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/vsc-vasa-provider-sra-97/manage/concept-configure-traditional-datastores.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure traditional datastores and virtual machines</div>-->
+         Configure traditional datastores and virtual machines
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Provision datastores"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-provision-datastores.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-provision-datastores.html">
+        Provision datastores
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Map datastores to storage capability profiles"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-map-storage-to-storage-capability-profiles.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-map-storage-to-storage-capability-profiles.html">
+        Map datastores to storage capability profiles
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Generate storage capability profiles automatically"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-automatically-generate-scps.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-automatically-generate-scps.html">
+        Generate storage capability profiles automatically
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Verify datastore compliance with the mapped storage capability profile"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-check-for-datastore-compliance-with-the-mapped-storage-capability-profile.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-check-for-datastore-compliance-with-the-mapped-storage-capability-profile.html">
+        Verify datastore compliance with the mapped storage capability profile
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Monitor datastores and virtual machines using the traditional dashboard"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-monitor-datastores-using-the-traditional-dashboard.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-monitor-datastores-using-the-traditional-dashboard.html">
+        Monitor datastores and virtual machines using the traditional dashboard
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Edit ESXi host settings for VSC, VASA Provider, and SRA"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-edit-esxi-host-settings.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-edit-esxi-host-settings.html">
+        Edit ESXi host settings for VSC, VASA Provider, and SRA
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure vVols datastores"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/concept-configure-vvols-datastores.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/vsc-vasa-provider-sra-97/manage/concept-configure-vvols-datastores.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure vVols datastores</div>-->
+         Configure vVols datastores
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure replication for vVols datastore"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/concept-configure-replication-for-vvols-datastore.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/concept-configure-replication-for-vvols-datastore.html">
+        Configure replication for vVols datastore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Provision vVols datastores"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-provision-vvol-datastores.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-provision-vvol-datastores.html">
+        Provision vVols datastores
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Monitor vVols datastores and virtual machines using the vVol dashboard"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-monitor-vvols-datastores-and-virtual-machines-using-vvols-dashboard.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-monitor-vvols-datastores-and-virtual-machines-using-vvols-dashboard.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Monitor vVols datastores and virtual machines using the vVol dashboard</div>-->
+         Monitor vVols datastores and virtual machines using the vVol dashboard
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="vVol dashboard data requirements"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/reference-verify-vvol-dashboard-data-requirements.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/manage/reference-verify-vvol-dashboard-data-requirements.html">
+        vVol dashboard data requirements
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage disaster recovery setup by using Site Recovery Manager"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/concept-manage-disaster-recovery-setup-using-srm.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/vsc-vasa-provider-sra-97/manage/concept-manage-disaster-recovery-setup-using-srm.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Manage disaster recovery setup by using Site Recovery Manager</div>-->
+         Manage disaster recovery setup by using Site Recovery Manager
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure VM Storage Policies"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-configure-vm-storage-policies.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-configure-vm-storage-policies.html">
+        Configure VM Storage Policies
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure protection groups"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-configure-protection-groups.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-configure-protection-groups.html">
+        Configure protection groups
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Pair protected and recovery sites"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-pair-protected-and-recovery-sites.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-pair-protected-and-recovery-sites.html">
+        Pair protected and recovery sites
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure protected and recovery site resources"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/concept-configure-protected-and-recovery-site-resources.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/concept-configure-protected-and-recovery-site-resources.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure protected and recovery site resources</div>-->
+         Configure protected and recovery site resources
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure network mappings"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-configure-network-mappings.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-configure-network-mappings.html">
+        Configure network mappings
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure folder mappings"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-configure-folder-mappings.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-configure-folder-mappings.html">
+        Configure folder mappings
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure resource mappings"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-configure-resource-mappings.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-configure-resource-mappings.html">
+        Configure resource mappings
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Map storage policies"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-map-storage-policies.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-map-storage-policies.html">
+        Map storage policies
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure placeholder datastores"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-configure-placeholder-datastores.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-configure-placeholder-datastores.html">
+        Configure placeholder datastores
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="configure SRA using array manager"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-configure-array-manager.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-configure-array-manager.html">
+        configure SRA using array manager
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Verify replicated storage systems"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-verify-the-replicated-storage-environment.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-verify-the-replicated-storage-environment.html">
+        Verify replicated storage systems
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Protect unprotected virtual machines"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-protect-non-protected-virtual-machines.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-protect-non-protected-virtual-machines.html">
+        Protect unprotected virtual machines
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage traditional and vVols datastores"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/concept-manage-datastore.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/vsc-vasa-provider-sra-97/manage/concept-manage-datastore.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Manage traditional and vVols datastores</div>-->
+         Manage traditional and vVols datastores
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Mount datastore on additional hosts"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-mount-datastores-on-host.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-mount-datastores-on-host.html">
+        Mount datastore on additional hosts
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Resize datastores"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-resize-datastores.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-resize-datastores.html">
+        Resize datastores
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Edit a vVols datastore"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-edit-a-vvol-datastore.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-edit-a-vvol-datastore.html">
+        Edit a vVols datastore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Ad storage to a vVols datastore"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-add-storage-to-a-vvol-datastore.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-add-storage-to-a-vvol-datastore.html">
+        Ad storage to a vVols datastore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Remov storage from a vVols datastore"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-remove-storage-from-a-vvols-datastore.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-remove-storage-from-a-vvols-datastore.html">
+        Remov storage from a vVols datastore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Mount a vVols datastore"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-mount-a-vvol-datastore.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-mount-a-vvol-datastore.html">
+        Mount a vVols datastore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Considerations for migrating or cloning virtual machines"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/reference-considerations-for-migrating-virtual-machines.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/reference-considerations-for-migrating-virtual-machines.html">
+        Considerations for migrating or cloning virtual machines
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Migrate traditional virtual machines to vVols datastores"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-migrate-standard-virtual-machines-to-vvol-datastores.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-migrate-standard-virtual-machines-to-vvol-datastores.html">
+        Migrate traditional virtual machines to vVols datastores
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Migrate virtual machines with older storage capability profiles"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-migrate-existing-virtual-machines-to-7-1-virtual-appliance.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-migrate-existing-virtual-machines-to-7-1-virtual-appliance.html">
+        Migrate virtual machines with older storage capability profiles
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Understand Virtual Storage Console reports"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/concept-virtual-storage-console-reports.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/vsc-vasa-provider-sra-97/manage/concept-virtual-storage-console-reports.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Understand Virtual Storage Console reports</div>-->
+         Understand Virtual Storage Console reports
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="What reports do"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/concept-what-reports-do.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/concept-what-reports-do.html">
+        What reports do
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Datastore Reports"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/concept-datastore-reports.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/concept-datastore-reports.html">
+        Datastore Reports
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="vVols reports"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/concept-what-vasa-provider-reports-do.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/concept-what-vasa-provider-reports-do.html">
+        vVols reports
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Troubleshoot issues with the virtual appliance for VSC, VASA Provider, and SRA"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/concept-troubleshoot-issues-with-the-virtual-appliance-for-vsc-vasa-provider-and-sra-test.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/vsc-vasa-provider-sra-97/manage/concept-troubleshoot-issues-with-the-virtual-appliance-for-vsc-vasa-provider-and-sra-test.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/vsc-vasa-provider-sra-97/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/vsc-vasa-provider-sra-97/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Troubleshoot issues with the virtual appliance for VSC, VASA Provider, and SRA</div>-->
+         Troubleshoot issues with the virtual appliance for VSC, VASA Provider, and SRA
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Collect the log files"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/task-collect-the-log-files.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/task-collect-the-log-files.html">
+        Collect the log files
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VVol datastore provision fails with large number of volumes"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/reference-vvol-datastore-provision-fails-with-large-number-of-volumes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/reference-vvol-datastore-provision-fails-with-large-number-of-volumes.html">
+        VVol datastore provision fails with large number of volumes
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Issue while editing VM Storage Policies after upgrade"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/reference-edit-vm-storage-policies-after-upgrade-throws-error-message.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/reference-edit-vm-storage-policies-after-upgrade-throws-error-message.html">
+        Issue while editing VM Storage Policies after upgrade
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VASA Provider status shows as &#8220;Offline&#8221; in vCenter Server GUI"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/reference-vasa-provider-storage-provider-status-show-offline-in-vcenter-gui.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/reference-vasa-provider-storage-provider-status-show-offline-in-vcenter-gui.html">
+        VASA Provider status shows as &#8220;Offline&#8221; in vCenter Server GUI
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Error while accessing the VSC Summary page of virtual appliance"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/reference-error-while-accessing-the-vsc-summary-page-of-virtual-appliance.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/reference-error-while-accessing-the-vsc-summary-page-of-virtual-appliance.html">
+        Error while accessing the VSC Summary page of virtual appliance
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Error deleting a datastore after network settings are changed"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/reference-error-deleting-a-datastore-after-network-settings-are-changed.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/reference-error-deleting-a-datastore-after-network-settings-are-changed.html">
+        Error deleting a datastore after network settings are changed
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Virtual machine provision fails with an undefined error"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/reference-vm-provision-fails-with-undefined-error.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/reference-vm-provision-fails-with-undefined-error.html">
+        Virtual machine provision fails with an undefined error
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Thick provision of VVols fails for ONTAP 9.4 storage systems"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/reference-thick-provision-fails-for-vvol-datastores-on-ontap-9-4.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/reference-thick-provision-fails-for-vvol-datastores-on-ontap-9-4.html">
+        Thick provision of VVols fails for ONTAP 9.4 storage systems
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Datastore inaccessible when volume status is changed to offline"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/reference-datastore-inaccessible-when-volume-status-is-changed-to-offline.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/reference-datastore-inaccessible-when-volume-status-is-changed-to-offline.html">
+        Datastore inaccessible when volume status is changed to offline
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Add storage system with IPv4 results in authentication error with IPv6 status in storage system grid"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/reference-authentication-failure-status-is-displayed-with-ipv6-as-the-cluster-ip-even-if-cluster-is-added-with-ipv4.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/reference-authentication-failure-status-is-displayed-with-ipv6-as-the-cluster-ip-even-if-cluster-is-added-with-ipv4.html">
+        Add storage system with IPv4 results in authentication error with IPv6 status in storage system grid
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="File creation error while provisioning virtual machines on VVol datastores"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/reference-file-creation-error-while-virtual-machine-provisioning-on-vvol-datastore-issue-we-are-unable-to-create-virtual-machine-using-the-default-vs0-svm-caus.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/reference-file-creation-error-while-virtual-machine-provisioning-on-vvol-datastore-issue-we-are-unable-to-create-virtual-machine-using-the-default-vs0-svm-caus.html">
+        File creation error while provisioning virtual machines on VVol datastores
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Incorrect status 'Failover in Progress' is reported for SRA in SRM"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/manage/reference-failover-in-progress-status-is-reported-inappropriately-for-sra.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/vsc-vasa-provider-sra-97/manage/reference-failover-in-progress-status-is-reported-inappropriately-for-sra.html">
+        Incorrect status 'Failover in Progress' is reported for SRA in SRM
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Legal notices"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/deploy/task-run-the-gos-timeout-scripts-for-solaris.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/vsc-vasa-provider-sra-97/legal-notices.html">
+        Legal notices
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/us-en/vsc-vasa-provider-sra-97"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/us-en/vsc-vasa-provider-sra-97"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">Set timeout values for Solaris guest operating systems</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2022-05-02 11:46:36 +0000">05/02/2022</time>
+        
+    
+    
+        <span>Contributors
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/us-en/vsc-vasa-provider-sra-97/images/discuss-sm.svg" alt="" class="github-icon" />Suggest changes</span>
+        <img src="/us-en/vsc-vasa-provider-sra-97/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/us-en/vsc-vasa-provider-sra-97/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/vsc-vasa-provider-sra-97/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/us-en/vsc-vasa-provider-sra-97/deploy/task-run-the-gos-timeout-scripts-for-solaris.html&page-title=Set timeout values for Solaris guest operating systems" class="page-nav-contribute-link" role="button">Request doc changes</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/vsc-vasa-provider-sra-97/blob/main/deploy/task-run-the-gos-timeout-scripts-for-solaris.adoc" class="page-nav-contribute-link" role="button">Edit this page</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >Learn how to contribute</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>PDFs<img src="/us-en/vsc-vasa-provider-sra-97/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/us-en/vsc-vasa-provider-sra-97/pdfs/fullsite-sidebar/VSC__VASA_Provider__and_SRA_Documentation.pdf" >
+                    <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>PDF of this doc site</a>
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Deploy_and_upgrade.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Deploy and upgrade
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Deployment_workflow_for_new_users_of_VSC__VASA_Provider__and_SRA_virtual_appliance.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Deployment workflow for new users of VSC, VASA Provider, and SRA virtual appliance
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Requirements_for_deploying_the_virtual_appliance_for_VSC__VASA_Provider__and_SRA.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Requirements for deploying the virtual appliance for VSC, VASA Provider, and SRA
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Deploy_or_upgrade_VSC__VASA_Provider__and_SRA.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Deploy or upgrade VSC, VASA Provider, and SRA
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Deploy_the_virtual_appliance_for_VSC__VASA_Provider__and_SRA.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Deploy the virtual appliance for VSC, VASA Provider, and SRA
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Enable_VASA_Provider_for_configuring_virtual_datastores.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Enable VASA Provider for configuring virtual datastores
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Enable_Storage_Replication_Adapter.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Enable Storage Replication Adapter
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Configure_your_Virtual_Storage_Console_for_VMware_vSphere_environment.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure your Virtual Storage Console for VMware vSphere environment
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Configure_ESXi_server_multipathing_and_timeout_settings.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure ESXi server multipathing and timeout settings
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/configure_guest_operating_system_scripts.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            configure guest operating system scripts
+          </a>
+          
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Configure_the_VSC_preferences_files.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure the VSC preferences files
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Configure_high_availability_for_the_virtual_appliance_for_VSC__VASA_Provider__and_SRA.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure high availability for the virtual appliance for VSC, VASA Provider, and SRA
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Configure_your_Virtual_Storage_Console_for_VMware_vSphere_storage_system_environment.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure your Virtual Storage Console for VMware vSphere storage system environment
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/vCenter_Server_role_based_access_control_features_in_VSC_for_VMware_vSphere.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            vCenter Server role-based access control features in VSC for VMware vSphere
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Standard_roles_packaged_with_the_virtual_appliance_for_VSC__VASA_Provider__and_SRA.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Standard roles packaged with the virtual appliance for VSC, VASA Provider, and SRA
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Privileges_required_for_VSC_tasks.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Privileges required for VSC tasks
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Configure_Storage_Replication_Adapter_for_disaster_recovery.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure Storage Replication Adapter for disaster recovery
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Troubleshoot_issues_with_the_virtual_appliance_for_VSC__VASA_Provider__and_SRA.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Troubleshoot issues with the virtual appliance for VSC, VASA Provider, and SRA
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Manage.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Manage
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Configure_storage_systems_for_VSC__VASA_Provider__and_SRA.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure storage systems for VSC, VASA Provider, and SRA
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Create_storage_capability_profiles.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Create storage capability profiles
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Configure_traditional_datastores_and_virtual_machines.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure traditional datastores and virtual machines
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Configure_vVols_datastores.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure vVols datastores
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Monitor_vVols_datastores_and_virtual_machines_using_the_vVol_dashboard.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Monitor vVols datastores and virtual machines using the vVol dashboard
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Manage_disaster_recovery_setup_by_using_Site_Recovery_Manager.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Manage disaster recovery setup by using Site Recovery Manager
+          </a>
+          
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Configure_protected_and_recovery_site_resources.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure protected and recovery site resources
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Manage_traditional_and_vVols_datastores.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Manage traditional and vVols datastores
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Understand_Virtual_Storage_Console_reports.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Understand Virtual Storage Console reports
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/vsc-vasa-provider-sra-97/pdfs/sidebar/Troubleshoot_issues_with_the_virtual_appliance_for_VSC__VASA_Provider__and_SRA.pdf" 
+            
+          >
+            <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Troubleshoot issues with the virtual appliance for VSC, VASA Provider, and SRA
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/us-en/vsc-vasa-provider-sra-97/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>Collection of separate PDF docs<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div class="paragraph lead">
+<p>The guest operating system (OS) timeout scripts set the SCSI I/O timeout settings for Solaris 10. You can specify either a 60-second timeout or a 190-second timeout.</p>
+</div>
+<div class="paragraph">
+<div class="title">Before you begin</div>
+<p>You must have mounted the ISO image containing the Solaris script.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Access the console of the Solaris virtual machine, and log in to an account with root privileges.</p>
+</li>
+<li>
+<p>Run the <code>solaris_gos_timeout-install.sh</code> script.</p>
+<div class="paragraph">
+<p>For Solaris 10, a message similar to the following is displayed:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Setting I/O Timeout for /dev/s–a - SUCCESS!</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Unmount the ISO image.</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/us-en/vsc-vasa-provider-sra-97/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/us-en/vsc-vasa-provider-sra-97/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">On this page</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Terms of use</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy policy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie policy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie settings</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">Send feedback about this page</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/us-en/vsc-vasa-provider-sra-97/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/us-en/vsc-vasa-provider-sra-97/js/prism.js'></script>
+      <script type="text/javascript" src='/us-en/vsc-vasa-provider-sra-97/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/us-en/vsc-vasa-provider-sra-97/js/ie-tabbed-blocks.js'></script>
+    <script src='/us-en/vsc-vasa-provider-sra-97/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
